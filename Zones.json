@@ -1,0 +1,3386 @@
+{
+    "43": {
+        "KOD_ZSJ_P": "43",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1530"
+    },
+    "698": {
+        "KOD_ZSJ_P": "698",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1507"
+    },
+    "701": {
+        "KOD_ZSJ_P": "701",
+        "hour": "23",
+        "day": "weekend",
+        "users": "526"
+    },
+    "1384": {
+        "KOD_ZSJ_P": "1384",
+        "hour": "23",
+        "day": "weekend",
+        "users": "957"
+    },
+    "4553": {
+        "KOD_ZSJ_P": "4553",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5429"
+    },
+    "5576": {
+        "KOD_ZSJ_P": "5576",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1086"
+    },
+    "5801": {
+        "KOD_ZSJ_P": "5801",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3049"
+    },
+    "6386": {
+        "KOD_ZSJ_P": "6386",
+        "hour": "23",
+        "day": "weekend",
+        "users": "308"
+    },
+    "7595": {
+        "KOD_ZSJ_P": "7595",
+        "hour": "23",
+        "day": "weekend",
+        "users": "910"
+    },
+    "8508": {
+        "KOD_ZSJ_P": "8508",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2254"
+    },
+    "8591": {
+        "KOD_ZSJ_P": "8591",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1540"
+    },
+    "9342": {
+        "KOD_ZSJ_P": "9342",
+        "hour": "23",
+        "day": "weekend",
+        "users": "228"
+    },
+    "9377": {
+        "KOD_ZSJ_P": "9377",
+        "hour": "23",
+        "day": "weekend",
+        "users": "581"
+    },
+    "9563": {
+        "KOD_ZSJ_P": "9563",
+        "hour": "23",
+        "day": "weekend",
+        "users": "384"
+    },
+    "10006": {
+        "KOD_ZSJ_P": "10006",
+        "hour": "23",
+        "day": "weekend",
+        "users": "783"
+    },
+    "10014": {
+        "KOD_ZSJ_P": "10014",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3904"
+    },
+    "10022": {
+        "KOD_ZSJ_P": "10022",
+        "hour": "23",
+        "day": "weekend",
+        "users": "6432"
+    },
+    "10031": {
+        "KOD_ZSJ_P": "10031",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3910"
+    },
+    "10049": {
+        "KOD_ZSJ_P": "10049",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3311"
+    },
+    "10057": {
+        "KOD_ZSJ_P": "10057",
+        "hour": "23",
+        "day": "weekend",
+        "users": "837"
+    },
+    "10065": {
+        "KOD_ZSJ_P": "10065",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3112"
+    },
+    "10073": {
+        "KOD_ZSJ_P": "10073",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1835"
+    },
+    "10081": {
+        "KOD_ZSJ_P": "10081",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1417"
+    },
+    "10090": {
+        "KOD_ZSJ_P": "10090",
+        "hour": "23",
+        "day": "weekend",
+        "users": "684"
+    },
+    "10103": {
+        "KOD_ZSJ_P": "10103",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2695"
+    },
+    "10111": {
+        "KOD_ZSJ_P": "10111",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1579"
+    },
+    "10120": {
+        "KOD_ZSJ_P": "10120",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1192"
+    },
+    "10138": {
+        "KOD_ZSJ_P": "10138",
+        "hour": "23",
+        "day": "weekend",
+        "users": "63"
+    },
+    "10146": {
+        "KOD_ZSJ_P": "10146",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2766"
+    },
+    "10154": {
+        "KOD_ZSJ_P": "10154",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2525"
+    },
+    "10162": {
+        "KOD_ZSJ_P": "10162",
+        "hour": "23",
+        "day": "weekend",
+        "users": "66"
+    },
+    "10171": {
+        "KOD_ZSJ_P": "10171",
+        "hour": "23",
+        "day": "weekend",
+        "users": "164"
+    },
+    "10189": {
+        "KOD_ZSJ_P": "10189",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5"
+    },
+    "10197": {
+        "KOD_ZSJ_P": "10197",
+        "hour": "23",
+        "day": "weekend",
+        "users": "681"
+    },
+    "10201": {
+        "KOD_ZSJ_P": "10201",
+        "hour": "23",
+        "day": "weekend",
+        "users": "153"
+    },
+    "10219": {
+        "KOD_ZSJ_P": "10219",
+        "hour": "23",
+        "day": "weekend",
+        "users": "511"
+    },
+    "10227": {
+        "KOD_ZSJ_P": "10227",
+        "hour": "23",
+        "day": "weekend",
+        "users": "441"
+    },
+    "10235": {
+        "KOD_ZSJ_P": "10235",
+        "hour": "23",
+        "day": "weekend",
+        "users": "389"
+    },
+    "10243": {
+        "KOD_ZSJ_P": "10243",
+        "hour": "23",
+        "day": "weekend",
+        "users": "14"
+    },
+    "10251": {
+        "KOD_ZSJ_P": "10251",
+        "hour": "23",
+        "day": "weekend",
+        "users": "26"
+    },
+    "10260": {
+        "KOD_ZSJ_P": "10260",
+        "hour": "23",
+        "day": "weekend",
+        "users": "255"
+    },
+    "10278": {
+        "KOD_ZSJ_P": "10278",
+        "hour": "23",
+        "day": "weekend",
+        "users": "28"
+    },
+    "10286": {
+        "KOD_ZSJ_P": "10286",
+        "hour": "23",
+        "day": "weekend",
+        "users": "897"
+    },
+    "10294": {
+        "KOD_ZSJ_P": "10294",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2874"
+    },
+    "10308": {
+        "KOD_ZSJ_P": "10308",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4405"
+    },
+    "10316": {
+        "KOD_ZSJ_P": "10316",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4258"
+    },
+    "10324": {
+        "KOD_ZSJ_P": "10324",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1027"
+    },
+    "10332": {
+        "KOD_ZSJ_P": "10332",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1430"
+    },
+    "10341": {
+        "KOD_ZSJ_P": "10341",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1372"
+    },
+    "10359": {
+        "KOD_ZSJ_P": "10359",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5215"
+    },
+    "10367": {
+        "KOD_ZSJ_P": "10367",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4521"
+    },
+    "10375": {
+        "KOD_ZSJ_P": "10375",
+        "hour": "23",
+        "day": "weekend",
+        "users": "384"
+    },
+    "10383": {
+        "KOD_ZSJ_P": "10383",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2924"
+    },
+    "10391": {
+        "KOD_ZSJ_P": "10391",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2999"
+    },
+    "10405": {
+        "KOD_ZSJ_P": "10405",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2845"
+    },
+    "10413": {
+        "KOD_ZSJ_P": "10413",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2075"
+    },
+    "10421": {
+        "KOD_ZSJ_P": "10421",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1643"
+    },
+    "10430": {
+        "KOD_ZSJ_P": "10430",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1026"
+    },
+    "10448": {
+        "KOD_ZSJ_P": "10448",
+        "hour": "23",
+        "day": "weekend",
+        "users": "907"
+    },
+    "10456": {
+        "KOD_ZSJ_P": "10456",
+        "hour": "23",
+        "day": "weekend",
+        "users": "955"
+    },
+    "10464": {
+        "KOD_ZSJ_P": "10464",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2600"
+    },
+    "10472": {
+        "KOD_ZSJ_P": "10472",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1556"
+    },
+    "10481": {
+        "KOD_ZSJ_P": "10481",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2814"
+    },
+    "10499": {
+        "KOD_ZSJ_P": "10499",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1715"
+    },
+    "10502": {
+        "KOD_ZSJ_P": "10502",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1737"
+    },
+    "10511": {
+        "KOD_ZSJ_P": "10511",
+        "hour": "23",
+        "day": "weekend",
+        "users": "109"
+    },
+    "10529": {
+        "KOD_ZSJ_P": "10529",
+        "hour": "23",
+        "day": "weekend",
+        "users": "154"
+    },
+    "10537": {
+        "KOD_ZSJ_P": "10537",
+        "hour": "23",
+        "day": "weekend",
+        "users": "18"
+    },
+    "10545": {
+        "KOD_ZSJ_P": "10545",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1589"
+    },
+    "10553": {
+        "KOD_ZSJ_P": "10553",
+        "hour": "23",
+        "day": "weekend",
+        "users": "818"
+    },
+    "10561": {
+        "KOD_ZSJ_P": "10561",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1187"
+    },
+    "10570": {
+        "KOD_ZSJ_P": "10570",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "10588": {
+        "KOD_ZSJ_P": "10588",
+        "hour": "23",
+        "day": "weekend",
+        "users": "631"
+    },
+    "10596": {
+        "KOD_ZSJ_P": "10596",
+        "hour": "23",
+        "day": "weekend",
+        "users": "671"
+    },
+    "10600": {
+        "KOD_ZSJ_P": "10600",
+        "hour": "23",
+        "day": "weekend",
+        "users": "550"
+    },
+    "10618": {
+        "KOD_ZSJ_P": "10618",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1041"
+    },
+    "10626": {
+        "KOD_ZSJ_P": "10626",
+        "hour": "23",
+        "day": "weekend",
+        "users": "14"
+    },
+    "10634": {
+        "KOD_ZSJ_P": "10634",
+        "hour": "23",
+        "day": "weekend",
+        "users": "23"
+    },
+    "10642": {
+        "KOD_ZSJ_P": "10642",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2708"
+    },
+    "10651": {
+        "KOD_ZSJ_P": "10651",
+        "hour": "23",
+        "day": "weekend",
+        "users": "12"
+    },
+    "10669": {
+        "KOD_ZSJ_P": "10669",
+        "hour": "23",
+        "day": "weekend",
+        "users": "11"
+    },
+    "10677": {
+        "KOD_ZSJ_P": "10677",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1816"
+    },
+    "10685": {
+        "KOD_ZSJ_P": "10685",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "10693": {
+        "KOD_ZSJ_P": "10693",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1308"
+    },
+    "10707": {
+        "KOD_ZSJ_P": "10707",
+        "hour": "23",
+        "day": "weekend",
+        "users": "848"
+    },
+    "10715": {
+        "KOD_ZSJ_P": "10715",
+        "hour": "23",
+        "day": "weekend",
+        "users": "822"
+    },
+    "10723": {
+        "KOD_ZSJ_P": "10723",
+        "hour": "23",
+        "day": "weekend",
+        "users": "290"
+    },
+    "10731": {
+        "KOD_ZSJ_P": "10731",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2303"
+    },
+    "10740": {
+        "KOD_ZSJ_P": "10740",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1894"
+    },
+    "10758": {
+        "KOD_ZSJ_P": "10758",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4111"
+    },
+    "10766": {
+        "KOD_ZSJ_P": "10766",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5"
+    },
+    "10774": {
+        "KOD_ZSJ_P": "10774",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1326"
+    },
+    "10782": {
+        "KOD_ZSJ_P": "10782",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1581"
+    },
+    "10791": {
+        "KOD_ZSJ_P": "10791",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3621"
+    },
+    "10804": {
+        "KOD_ZSJ_P": "10804",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1179"
+    },
+    "10812": {
+        "KOD_ZSJ_P": "10812",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2928"
+    },
+    "10821": {
+        "KOD_ZSJ_P": "10821",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2231"
+    },
+    "10839": {
+        "KOD_ZSJ_P": "10839",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1504"
+    },
+    "10847": {
+        "KOD_ZSJ_P": "10847",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1739"
+    },
+    "10855": {
+        "KOD_ZSJ_P": "10855",
+        "hour": "23",
+        "day": "weekend",
+        "users": "571"
+    },
+    "10863": {
+        "KOD_ZSJ_P": "10863",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1560"
+    },
+    "10871": {
+        "KOD_ZSJ_P": "10871",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2261"
+    },
+    "10880": {
+        "KOD_ZSJ_P": "10880",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4773"
+    },
+    "10898": {
+        "KOD_ZSJ_P": "10898",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2947"
+    },
+    "10901": {
+        "KOD_ZSJ_P": "10901",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2691"
+    },
+    "10910": {
+        "KOD_ZSJ_P": "10910",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1677"
+    },
+    "10928": {
+        "KOD_ZSJ_P": "10928",
+        "hour": "23",
+        "day": "weekend",
+        "users": "103"
+    },
+    "10936": {
+        "KOD_ZSJ_P": "10936",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1391"
+    },
+    "10944": {
+        "KOD_ZSJ_P": "10944",
+        "hour": "23",
+        "day": "weekend",
+        "users": "32"
+    },
+    "10952": {
+        "KOD_ZSJ_P": "10952",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1035"
+    },
+    "10961": {
+        "KOD_ZSJ_P": "10961",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1246"
+    },
+    "10979": {
+        "KOD_ZSJ_P": "10979",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1253"
+    },
+    "10987": {
+        "KOD_ZSJ_P": "10987",
+        "hour": "23",
+        "day": "weekend",
+        "users": "79"
+    },
+    "10995": {
+        "KOD_ZSJ_P": "10995",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1056"
+    },
+    "11011": {
+        "KOD_ZSJ_P": "11011",
+        "hour": "23",
+        "day": "weekend",
+        "users": "104"
+    },
+    "11029": {
+        "KOD_ZSJ_P": "11029",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2358"
+    },
+    "11037": {
+        "KOD_ZSJ_P": "11037",
+        "hour": "23",
+        "day": "weekend",
+        "users": "52"
+    },
+    "11045": {
+        "KOD_ZSJ_P": "11045",
+        "hour": "23",
+        "day": "weekend",
+        "users": "356"
+    },
+    "11053": {
+        "KOD_ZSJ_P": "11053",
+        "hour": "23",
+        "day": "weekend",
+        "users": "344"
+    },
+    "11061": {
+        "KOD_ZSJ_P": "11061",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1277"
+    },
+    "11070": {
+        "KOD_ZSJ_P": "11070",
+        "hour": "23",
+        "day": "weekend",
+        "users": "360"
+    },
+    "11088": {
+        "KOD_ZSJ_P": "11088",
+        "hour": "23",
+        "day": "weekend",
+        "users": "755"
+    },
+    "11096": {
+        "KOD_ZSJ_P": "11096",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2306"
+    },
+    "11100": {
+        "KOD_ZSJ_P": "11100",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2145"
+    },
+    "11118": {
+        "KOD_ZSJ_P": "11118",
+        "hour": "23",
+        "day": "weekend",
+        "users": "261"
+    },
+    "11126": {
+        "KOD_ZSJ_P": "11126",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1299"
+    },
+    "11134": {
+        "KOD_ZSJ_P": "11134",
+        "hour": "23",
+        "day": "weekend",
+        "users": "11849"
+    },
+    "11142": {
+        "KOD_ZSJ_P": "11142",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1286"
+    },
+    "11151": {
+        "KOD_ZSJ_P": "11151",
+        "hour": "23",
+        "day": "weekend",
+        "users": "44"
+    },
+    "11169": {
+        "KOD_ZSJ_P": "11169",
+        "hour": "23",
+        "day": "weekend",
+        "users": "65"
+    },
+    "11177": {
+        "KOD_ZSJ_P": "11177",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1458"
+    },
+    "11185": {
+        "KOD_ZSJ_P": "11185",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1028"
+    },
+    "11193": {
+        "KOD_ZSJ_P": "11193",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2667"
+    },
+    "11207": {
+        "KOD_ZSJ_P": "11207",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2495"
+    },
+    "11215": {
+        "KOD_ZSJ_P": "11215",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2424"
+    },
+    "11223": {
+        "KOD_ZSJ_P": "11223",
+        "hour": "23",
+        "day": "weekend",
+        "users": "439"
+    },
+    "11231": {
+        "KOD_ZSJ_P": "11231",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2210"
+    },
+    "11240": {
+        "KOD_ZSJ_P": "11240",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2051"
+    },
+    "11258": {
+        "KOD_ZSJ_P": "11258",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1954"
+    },
+    "11266": {
+        "KOD_ZSJ_P": "11266",
+        "hour": "23",
+        "day": "weekend",
+        "users": "513"
+    },
+    "11274": {
+        "KOD_ZSJ_P": "11274",
+        "hour": "23",
+        "day": "weekend",
+        "users": "880"
+    },
+    "11282": {
+        "KOD_ZSJ_P": "11282",
+        "hour": "23",
+        "day": "weekend",
+        "users": "37"
+    },
+    "11291": {
+        "KOD_ZSJ_P": "11291",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "11304": {
+        "KOD_ZSJ_P": "11304",
+        "hour": "23",
+        "day": "weekend",
+        "users": "658"
+    },
+    "11321": {
+        "KOD_ZSJ_P": "11321",
+        "hour": "23",
+        "day": "weekend",
+        "users": "590"
+    },
+    "11339": {
+        "KOD_ZSJ_P": "11339",
+        "hour": "23",
+        "day": "weekend",
+        "users": "14"
+    },
+    "11347": {
+        "KOD_ZSJ_P": "11347",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1134"
+    },
+    "11363": {
+        "KOD_ZSJ_P": "11363",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3453"
+    },
+    "11371": {
+        "KOD_ZSJ_P": "11371",
+        "hour": "23",
+        "day": "weekend",
+        "users": "697"
+    },
+    "11380": {
+        "KOD_ZSJ_P": "11380",
+        "hour": "23",
+        "day": "weekend",
+        "users": "380"
+    },
+    "11398": {
+        "KOD_ZSJ_P": "11398",
+        "hour": "23",
+        "day": "weekend",
+        "users": "374"
+    },
+    "11401": {
+        "KOD_ZSJ_P": "11401",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1488"
+    },
+    "11436": {
+        "KOD_ZSJ_P": "11436",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3490"
+    },
+    "11444": {
+        "KOD_ZSJ_P": "11444",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1371"
+    },
+    "11452": {
+        "KOD_ZSJ_P": "11452",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3248"
+    },
+    "11461": {
+        "KOD_ZSJ_P": "11461",
+        "hour": "23",
+        "day": "weekend",
+        "users": "886"
+    },
+    "11479": {
+        "KOD_ZSJ_P": "11479",
+        "hour": "23",
+        "day": "weekend",
+        "users": "174"
+    },
+    "11487": {
+        "KOD_ZSJ_P": "11487",
+        "hour": "23",
+        "day": "weekend",
+        "users": "79"
+    },
+    "11495": {
+        "KOD_ZSJ_P": "11495",
+        "hour": "23",
+        "day": "weekend",
+        "users": "462"
+    },
+    "11509": {
+        "KOD_ZSJ_P": "11509",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1443"
+    },
+    "11517": {
+        "KOD_ZSJ_P": "11517",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2031"
+    },
+    "11525": {
+        "KOD_ZSJ_P": "11525",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4048"
+    },
+    "11533": {
+        "KOD_ZSJ_P": "11533",
+        "hour": "23",
+        "day": "weekend",
+        "users": "735"
+    },
+    "11541": {
+        "KOD_ZSJ_P": "11541",
+        "hour": "23",
+        "day": "weekend",
+        "users": "269"
+    },
+    "11550": {
+        "KOD_ZSJ_P": "11550",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "11568": {
+        "KOD_ZSJ_P": "11568",
+        "hour": "23",
+        "day": "weekend",
+        "users": "173"
+    },
+    "11576": {
+        "KOD_ZSJ_P": "11576",
+        "hour": "23",
+        "day": "weekend",
+        "users": "13"
+    },
+    "11584": {
+        "KOD_ZSJ_P": "11584",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2767"
+    },
+    "11592": {
+        "KOD_ZSJ_P": "11592",
+        "hour": "23",
+        "day": "weekend",
+        "users": "727"
+    },
+    "11606": {
+        "KOD_ZSJ_P": "11606",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1864"
+    },
+    "11614": {
+        "KOD_ZSJ_P": "11614",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1952"
+    },
+    "11622": {
+        "KOD_ZSJ_P": "11622",
+        "hour": "23",
+        "day": "weekend",
+        "users": "78"
+    },
+    "11631": {
+        "KOD_ZSJ_P": "11631",
+        "hour": "23",
+        "day": "weekend",
+        "users": "435"
+    },
+    "11649": {
+        "KOD_ZSJ_P": "11649",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1844"
+    },
+    "11657": {
+        "KOD_ZSJ_P": "11657",
+        "hour": "23",
+        "day": "weekend",
+        "users": "554"
+    },
+    "11665": {
+        "KOD_ZSJ_P": "11665",
+        "hour": "23",
+        "day": "weekend",
+        "users": "290"
+    },
+    "11673": {
+        "KOD_ZSJ_P": "11673",
+        "hour": "23",
+        "day": "weekend",
+        "users": "6"
+    },
+    "11681": {
+        "KOD_ZSJ_P": "11681",
+        "hour": "23",
+        "day": "weekend",
+        "users": "22"
+    },
+    "11690": {
+        "KOD_ZSJ_P": "11690",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "11703": {
+        "KOD_ZSJ_P": "11703",
+        "hour": "23",
+        "day": "weekend",
+        "users": "462"
+    },
+    "11720": {
+        "KOD_ZSJ_P": "11720",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1423"
+    },
+    "11738": {
+        "KOD_ZSJ_P": "11738",
+        "hour": "23",
+        "day": "weekend",
+        "users": "188"
+    },
+    "11746": {
+        "KOD_ZSJ_P": "11746",
+        "hour": "23",
+        "day": "weekend",
+        "users": "566"
+    },
+    "11754": {
+        "KOD_ZSJ_P": "11754",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1369"
+    },
+    "11762": {
+        "KOD_ZSJ_P": "11762",
+        "hour": "23",
+        "day": "weekend",
+        "users": "25"
+    },
+    "11771": {
+        "KOD_ZSJ_P": "11771",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1494"
+    },
+    "11789": {
+        "KOD_ZSJ_P": "11789",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1268"
+    },
+    "11797": {
+        "KOD_ZSJ_P": "11797",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5223"
+    },
+    "11801": {
+        "KOD_ZSJ_P": "11801",
+        "hour": "23",
+        "day": "weekend",
+        "users": "177"
+    },
+    "11819": {
+        "KOD_ZSJ_P": "11819",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "11827": {
+        "KOD_ZSJ_P": "11827",
+        "hour": "23",
+        "day": "weekend",
+        "users": "7784"
+    },
+    "11835": {
+        "KOD_ZSJ_P": "11835",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1573"
+    },
+    "11843": {
+        "KOD_ZSJ_P": "11843",
+        "hour": "23",
+        "day": "weekend",
+        "users": "298"
+    },
+    "11851": {
+        "KOD_ZSJ_P": "11851",
+        "hour": "23",
+        "day": "weekend",
+        "users": "190"
+    },
+    "11860": {
+        "KOD_ZSJ_P": "11860",
+        "hour": "23",
+        "day": "weekend",
+        "users": "86"
+    },
+    "11878": {
+        "KOD_ZSJ_P": "11878",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5"
+    },
+    "11886": {
+        "KOD_ZSJ_P": "11886",
+        "hour": "23",
+        "day": "weekend",
+        "users": "7"
+    },
+    "11894": {
+        "KOD_ZSJ_P": "11894",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5"
+    },
+    "11908": {
+        "KOD_ZSJ_P": "11908",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1455"
+    },
+    "11916": {
+        "KOD_ZSJ_P": "11916",
+        "hour": "23",
+        "day": "weekend",
+        "users": "249"
+    },
+    "11924": {
+        "KOD_ZSJ_P": "11924",
+        "hour": "23",
+        "day": "weekend",
+        "users": "131"
+    },
+    "11932": {
+        "KOD_ZSJ_P": "11932",
+        "hour": "23",
+        "day": "weekend",
+        "users": "13"
+    },
+    "11941": {
+        "KOD_ZSJ_P": "11941",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "11959": {
+        "KOD_ZSJ_P": "11959",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "11967": {
+        "KOD_ZSJ_P": "11967",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2693"
+    },
+    "11975": {
+        "KOD_ZSJ_P": "11975",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3462"
+    },
+    "11983": {
+        "KOD_ZSJ_P": "11983",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3995"
+    },
+    "11991": {
+        "KOD_ZSJ_P": "11991",
+        "hour": "23",
+        "day": "weekend",
+        "users": "171"
+    },
+    "12009": {
+        "KOD_ZSJ_P": "12009",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1221"
+    },
+    "12017": {
+        "KOD_ZSJ_P": "12017",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1237"
+    },
+    "12033": {
+        "KOD_ZSJ_P": "12033",
+        "hour": "23",
+        "day": "weekend",
+        "users": "6572"
+    },
+    "12041": {
+        "KOD_ZSJ_P": "12041",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "12050": {
+        "KOD_ZSJ_P": "12050",
+        "hour": "23",
+        "day": "weekend",
+        "users": "10"
+    },
+    "12068": {
+        "KOD_ZSJ_P": "12068",
+        "hour": "23",
+        "day": "weekend",
+        "users": "864"
+    },
+    "12076": {
+        "KOD_ZSJ_P": "12076",
+        "hour": "23",
+        "day": "weekend",
+        "users": "92"
+    },
+    "12084": {
+        "KOD_ZSJ_P": "12084",
+        "hour": "23",
+        "day": "weekend",
+        "users": "852"
+    },
+    "12092": {
+        "KOD_ZSJ_P": "12092",
+        "hour": "23",
+        "day": "weekend",
+        "users": "670"
+    },
+    "12106": {
+        "KOD_ZSJ_P": "12106",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1027"
+    },
+    "12114": {
+        "KOD_ZSJ_P": "12114",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1093"
+    },
+    "12122": {
+        "KOD_ZSJ_P": "12122",
+        "hour": "23",
+        "day": "weekend",
+        "users": "92"
+    },
+    "12131": {
+        "KOD_ZSJ_P": "12131",
+        "hour": "23",
+        "day": "weekend",
+        "users": "116"
+    },
+    "12149": {
+        "KOD_ZSJ_P": "12149",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1343"
+    },
+    "12157": {
+        "KOD_ZSJ_P": "12157",
+        "hour": "23",
+        "day": "weekend",
+        "users": "475"
+    },
+    "12165": {
+        "KOD_ZSJ_P": "12165",
+        "hour": "23",
+        "day": "weekend",
+        "users": "84"
+    },
+    "12173": {
+        "KOD_ZSJ_P": "12173",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2993"
+    },
+    "12190": {
+        "KOD_ZSJ_P": "12190",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "12203": {
+        "KOD_ZSJ_P": "12203",
+        "hour": "23",
+        "day": "weekend",
+        "users": "86"
+    },
+    "12211": {
+        "KOD_ZSJ_P": "12211",
+        "hour": "23",
+        "day": "weekend",
+        "users": "15"
+    },
+    "12220": {
+        "KOD_ZSJ_P": "12220",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1479"
+    },
+    "12238": {
+        "KOD_ZSJ_P": "12238",
+        "hour": "23",
+        "day": "weekend",
+        "users": "77"
+    },
+    "12246": {
+        "KOD_ZSJ_P": "12246",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1199"
+    },
+    "12271": {
+        "KOD_ZSJ_P": "12271",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "12289": {
+        "KOD_ZSJ_P": "12289",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2597"
+    },
+    "12301": {
+        "KOD_ZSJ_P": "12301",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1741"
+    },
+    "12319": {
+        "KOD_ZSJ_P": "12319",
+        "hour": "23",
+        "day": "weekend",
+        "users": "251"
+    },
+    "12327": {
+        "KOD_ZSJ_P": "12327",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1772"
+    },
+    "12335": {
+        "KOD_ZSJ_P": "12335",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2330"
+    },
+    "12343": {
+        "KOD_ZSJ_P": "12343",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5170"
+    },
+    "12351": {
+        "KOD_ZSJ_P": "12351",
+        "hour": "23",
+        "day": "weekend",
+        "users": "143"
+    },
+    "12360": {
+        "KOD_ZSJ_P": "12360",
+        "hour": "23",
+        "day": "weekend",
+        "users": "490"
+    },
+    "12378": {
+        "KOD_ZSJ_P": "12378",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1457"
+    },
+    "12386": {
+        "KOD_ZSJ_P": "12386",
+        "hour": "23",
+        "day": "weekend",
+        "users": "6719"
+    },
+    "12394": {
+        "KOD_ZSJ_P": "12394",
+        "hour": "23",
+        "day": "weekend",
+        "users": "115"
+    },
+    "12408": {
+        "KOD_ZSJ_P": "12408",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1001"
+    },
+    "12416": {
+        "KOD_ZSJ_P": "12416",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1185"
+    },
+    "12424": {
+        "KOD_ZSJ_P": "12424",
+        "hour": "23",
+        "day": "weekend",
+        "users": "515"
+    },
+    "12441": {
+        "KOD_ZSJ_P": "12441",
+        "hour": "23",
+        "day": "weekend",
+        "users": "34"
+    },
+    "12459": {
+        "KOD_ZSJ_P": "12459",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "12467": {
+        "KOD_ZSJ_P": "12467",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "12475": {
+        "KOD_ZSJ_P": "12475",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1"
+    },
+    "12483": {
+        "KOD_ZSJ_P": "12483",
+        "hour": "23",
+        "day": "weekend",
+        "users": "727"
+    },
+    "12491": {
+        "KOD_ZSJ_P": "12491",
+        "hour": "23",
+        "day": "weekend",
+        "users": "919"
+    },
+    "12505": {
+        "KOD_ZSJ_P": "12505",
+        "hour": "23",
+        "day": "weekend",
+        "users": "165"
+    },
+    "12513": {
+        "KOD_ZSJ_P": "12513",
+        "hour": "23",
+        "day": "weekend",
+        "users": "728"
+    },
+    "12521": {
+        "KOD_ZSJ_P": "12521",
+        "hour": "23",
+        "day": "weekend",
+        "users": "147"
+    },
+    "12530": {
+        "KOD_ZSJ_P": "12530",
+        "hour": "23",
+        "day": "weekend",
+        "users": "124"
+    },
+    "12556": {
+        "KOD_ZSJ_P": "12556",
+        "hour": "23",
+        "day": "weekend",
+        "users": "586"
+    },
+    "12564": {
+        "KOD_ZSJ_P": "12564",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1787"
+    },
+    "12572": {
+        "KOD_ZSJ_P": "12572",
+        "hour": "23",
+        "day": "weekend",
+        "users": "39"
+    },
+    "12581": {
+        "KOD_ZSJ_P": "12581",
+        "hour": "23",
+        "day": "weekend",
+        "users": "230"
+    },
+    "12599": {
+        "KOD_ZSJ_P": "12599",
+        "hour": "23",
+        "day": "weekend",
+        "users": "57"
+    },
+    "14095": {
+        "KOD_ZSJ_P": "14095",
+        "hour": "23",
+        "day": "weekend",
+        "users": "453"
+    },
+    "14109": {
+        "KOD_ZSJ_P": "14109",
+        "hour": "23",
+        "day": "weekend",
+        "users": "233"
+    },
+    "15598": {
+        "KOD_ZSJ_P": "15598",
+        "hour": "23",
+        "day": "weekend",
+        "users": "206"
+    },
+    "16071": {
+        "KOD_ZSJ_P": "16071",
+        "hour": "23",
+        "day": "weekend",
+        "users": "230"
+    },
+    "16110": {
+        "KOD_ZSJ_P": "16110",
+        "hour": "23",
+        "day": "weekend",
+        "users": "708"
+    },
+    "18155": {
+        "KOD_ZSJ_P": "18155",
+        "hour": "23",
+        "day": "weekend",
+        "users": "599"
+    },
+    "18767": {
+        "KOD_ZSJ_P": "18767",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2915"
+    },
+    "19828": {
+        "KOD_ZSJ_P": "19828",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2993"
+    },
+    "21229": {
+        "KOD_ZSJ_P": "21229",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1162"
+    },
+    "29289": {
+        "KOD_ZSJ_P": "29289",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3107"
+    },
+    "30791": {
+        "KOD_ZSJ_P": "30791",
+        "hour": "23",
+        "day": "weekend",
+        "users": "827"
+    },
+    "30805": {
+        "KOD_ZSJ_P": "30805",
+        "hour": "23",
+        "day": "weekend",
+        "users": "265"
+    },
+    "32107": {
+        "KOD_ZSJ_P": "32107",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1802"
+    },
+    "33898": {
+        "KOD_ZSJ_P": "33898",
+        "hour": "23",
+        "day": "weekend",
+        "users": "382"
+    },
+    "36455": {
+        "KOD_ZSJ_P": "36455",
+        "hour": "23",
+        "day": "weekend",
+        "users": "433"
+    },
+    "36463": {
+        "KOD_ZSJ_P": "36463",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "36544": {
+        "KOD_ZSJ_P": "36544",
+        "hour": "23",
+        "day": "weekend",
+        "users": "228"
+    },
+    "36706": {
+        "KOD_ZSJ_P": "36706",
+        "hour": "23",
+        "day": "weekend",
+        "users": "63"
+    },
+    "36714": {
+        "KOD_ZSJ_P": "36714",
+        "hour": "23",
+        "day": "weekend",
+        "users": "26"
+    },
+    "39187": {
+        "KOD_ZSJ_P": "39187",
+        "hour": "23",
+        "day": "weekend",
+        "users": "165"
+    },
+    "40231": {
+        "KOD_ZSJ_P": "40231",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1392"
+    },
+    "40771": {
+        "KOD_ZSJ_P": "40771",
+        "hour": "23",
+        "day": "weekend",
+        "users": "863"
+    },
+    "41840": {
+        "KOD_ZSJ_P": "41840",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1801"
+    },
+    "45667": {
+        "KOD_ZSJ_P": "45667",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1046"
+    },
+    "45705": {
+        "KOD_ZSJ_P": "45705",
+        "hour": "23",
+        "day": "weekend",
+        "users": "885"
+    },
+    "46680": {
+        "KOD_ZSJ_P": "46680",
+        "hour": "23",
+        "day": "weekend",
+        "users": "675"
+    },
+    "48631": {
+        "KOD_ZSJ_P": "48631",
+        "hour": "23",
+        "day": "weekend",
+        "users": "163"
+    },
+    "48721": {
+        "KOD_ZSJ_P": "48721",
+        "hour": "23",
+        "day": "weekend",
+        "users": "813"
+    },
+    "48828": {
+        "KOD_ZSJ_P": "48828",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1711"
+    },
+    "48836": {
+        "KOD_ZSJ_P": "48836",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1610"
+    },
+    "48844": {
+        "KOD_ZSJ_P": "48844",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "48852": {
+        "KOD_ZSJ_P": "48852",
+        "hour": "23",
+        "day": "weekend",
+        "users": "57"
+    },
+    "48861": {
+        "KOD_ZSJ_P": "48861",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "50300": {
+        "KOD_ZSJ_P": "50300",
+        "hour": "23",
+        "day": "weekend",
+        "users": "173"
+    },
+    "54135": {
+        "KOD_ZSJ_P": "54135",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3249"
+    },
+    "54593": {
+        "KOD_ZSJ_P": "54593",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1020"
+    },
+    "55701": {
+        "KOD_ZSJ_P": "55701",
+        "hour": "23",
+        "day": "weekend",
+        "users": "984"
+    },
+    "55727": {
+        "KOD_ZSJ_P": "55727",
+        "hour": "23",
+        "day": "weekend",
+        "users": "906"
+    },
+    "55735": {
+        "KOD_ZSJ_P": "55735",
+        "hour": "23",
+        "day": "weekend",
+        "users": "445"
+    },
+    "55743": {
+        "KOD_ZSJ_P": "55743",
+        "hour": "23",
+        "day": "weekend",
+        "users": "665"
+    },
+    "55751": {
+        "KOD_ZSJ_P": "55751",
+        "hour": "23",
+        "day": "weekend",
+        "users": "41"
+    },
+    "55760": {
+        "KOD_ZSJ_P": "55760",
+        "hour": "23",
+        "day": "weekend",
+        "users": "377"
+    },
+    "55778": {
+        "KOD_ZSJ_P": "55778",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1994"
+    },
+    "55786": {
+        "KOD_ZSJ_P": "55786",
+        "hour": "23",
+        "day": "weekend",
+        "users": "26"
+    },
+    "55794": {
+        "KOD_ZSJ_P": "55794",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5"
+    },
+    "55808": {
+        "KOD_ZSJ_P": "55808",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1"
+    },
+    "55816": {
+        "KOD_ZSJ_P": "55816",
+        "hour": "23",
+        "day": "weekend",
+        "users": "519"
+    },
+    "55824": {
+        "KOD_ZSJ_P": "55824",
+        "hour": "23",
+        "day": "weekend",
+        "users": "413"
+    },
+    "55832": {
+        "KOD_ZSJ_P": "55832",
+        "hour": "23",
+        "day": "weekend",
+        "users": "457"
+    },
+    "55859": {
+        "KOD_ZSJ_P": "55859",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1449"
+    },
+    "56600": {
+        "KOD_ZSJ_P": "56600",
+        "hour": "23",
+        "day": "weekend",
+        "users": "89"
+    },
+    "57975": {
+        "KOD_ZSJ_P": "57975",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2162"
+    },
+    "57983": {
+        "KOD_ZSJ_P": "57983",
+        "hour": "23",
+        "day": "weekend",
+        "users": "12"
+    },
+    "58203": {
+        "KOD_ZSJ_P": "58203",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1464"
+    },
+    "59421": {
+        "KOD_ZSJ_P": "59421",
+        "hour": "23",
+        "day": "weekend",
+        "users": "301"
+    },
+    "59439": {
+        "KOD_ZSJ_P": "59439",
+        "hour": "23",
+        "day": "weekend",
+        "users": "240"
+    },
+    "60275": {
+        "KOD_ZSJ_P": "60275",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1402"
+    },
+    "61093": {
+        "KOD_ZSJ_P": "61093",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1143"
+    },
+    "63002": {
+        "KOD_ZSJ_P": "63002",
+        "hour": "23",
+        "day": "weekend",
+        "users": "871"
+    },
+    "64351": {
+        "KOD_ZSJ_P": "64351",
+        "hour": "23",
+        "day": "weekend",
+        "users": "369"
+    },
+    "66401": {
+        "KOD_ZSJ_P": "66401",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2712"
+    },
+    "66419": {
+        "KOD_ZSJ_P": "66419",
+        "hour": "23",
+        "day": "weekend",
+        "users": "17"
+    },
+    "67334": {
+        "KOD_ZSJ_P": "67334",
+        "hour": "23",
+        "day": "weekend",
+        "users": "746"
+    },
+    "67474": {
+        "KOD_ZSJ_P": "67474",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1686"
+    },
+    "71285": {
+        "KOD_ZSJ_P": "71285",
+        "hour": "23",
+        "day": "weekend",
+        "users": "481"
+    },
+    "74136": {
+        "KOD_ZSJ_P": "74136",
+        "hour": "23",
+        "day": "weekend",
+        "users": "579"
+    },
+    "75884": {
+        "KOD_ZSJ_P": "75884",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2274"
+    },
+    "75949": {
+        "KOD_ZSJ_P": "75949",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2576"
+    },
+    "76481": {
+        "KOD_ZSJ_P": "76481",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1008"
+    },
+    "76732": {
+        "KOD_ZSJ_P": "76732",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1292"
+    },
+    "77585": {
+        "KOD_ZSJ_P": "77585",
+        "hour": "23",
+        "day": "weekend",
+        "users": "220"
+    },
+    "77658": {
+        "KOD_ZSJ_P": "77658",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1191"
+    },
+    "77666": {
+        "KOD_ZSJ_P": "77666",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1017"
+    },
+    "79464": {
+        "KOD_ZSJ_P": "79464",
+        "hour": "23",
+        "day": "weekend",
+        "users": "29"
+    },
+    "79472": {
+        "KOD_ZSJ_P": "79472",
+        "hour": "23",
+        "day": "weekend",
+        "users": "587"
+    },
+    "79499": {
+        "KOD_ZSJ_P": "79499",
+        "hour": "23",
+        "day": "weekend",
+        "users": "340"
+    },
+    "79685": {
+        "KOD_ZSJ_P": "79685",
+        "hour": "23",
+        "day": "weekend",
+        "users": "106"
+    },
+    "79898": {
+        "KOD_ZSJ_P": "79898",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2537"
+    },
+    "84832": {
+        "KOD_ZSJ_P": "84832",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1808"
+    },
+    "85839": {
+        "KOD_ZSJ_P": "85839",
+        "hour": "23",
+        "day": "weekend",
+        "users": "104"
+    },
+    "86347": {
+        "KOD_ZSJ_P": "86347",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1198"
+    },
+    "87653": {
+        "KOD_ZSJ_P": "87653",
+        "hour": "23",
+        "day": "weekend",
+        "users": "756"
+    },
+    "89044": {
+        "KOD_ZSJ_P": "89044",
+        "hour": "23",
+        "day": "weekend",
+        "users": "616"
+    },
+    "90115": {
+        "KOD_ZSJ_P": "90115",
+        "hour": "23",
+        "day": "weekend",
+        "users": "163"
+    },
+    "90875": {
+        "KOD_ZSJ_P": "90875",
+        "hour": "23",
+        "day": "weekend",
+        "users": "678"
+    },
+    "90913": {
+        "KOD_ZSJ_P": "90913",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1004"
+    },
+    "90921": {
+        "KOD_ZSJ_P": "90921",
+        "hour": "23",
+        "day": "weekend",
+        "users": "198"
+    },
+    "92592": {
+        "KOD_ZSJ_P": "92592",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1658"
+    },
+    "92789": {
+        "KOD_ZSJ_P": "92789",
+        "hour": "23",
+        "day": "weekend",
+        "users": "319"
+    },
+    "93084": {
+        "KOD_ZSJ_P": "93084",
+        "hour": "23",
+        "day": "weekend",
+        "users": "30"
+    },
+    "93092": {
+        "KOD_ZSJ_P": "93092",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1679"
+    },
+    "94650": {
+        "KOD_ZSJ_P": "94650",
+        "hour": "23",
+        "day": "weekend",
+        "users": "976"
+    },
+    "95079": {
+        "KOD_ZSJ_P": "95079",
+        "hour": "23",
+        "day": "weekend",
+        "users": "169"
+    },
+    "95087": {
+        "KOD_ZSJ_P": "95087",
+        "hour": "23",
+        "day": "weekend",
+        "users": "125"
+    },
+    "97934": {
+        "KOD_ZSJ_P": "97934",
+        "hour": "23",
+        "day": "weekend",
+        "users": "7198"
+    },
+    "98191": {
+        "KOD_ZSJ_P": "98191",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1833"
+    },
+    "98507": {
+        "KOD_ZSJ_P": "98507",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2564"
+    },
+    "98892": {
+        "KOD_ZSJ_P": "98892",
+        "hour": "23",
+        "day": "weekend",
+        "users": "751"
+    },
+    "99058": {
+        "KOD_ZSJ_P": "99058",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2037"
+    },
+    "99988": {
+        "KOD_ZSJ_P": "99988",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1774"
+    },
+    "101834": {
+        "KOD_ZSJ_P": "101834",
+        "hour": "23",
+        "day": "weekend",
+        "users": "854"
+    },
+    "102903": {
+        "KOD_ZSJ_P": "102903",
+        "hour": "23",
+        "day": "weekend",
+        "users": "851"
+    },
+    "103055": {
+        "KOD_ZSJ_P": "103055",
+        "hour": "23",
+        "day": "weekend",
+        "users": "253"
+    },
+    "103721": {
+        "KOD_ZSJ_P": "103721",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1156"
+    },
+    "103837": {
+        "KOD_ZSJ_P": "103837",
+        "hour": "23",
+        "day": "weekend",
+        "users": "163"
+    },
+    "104558": {
+        "KOD_ZSJ_P": "104558",
+        "hour": "23",
+        "day": "weekend",
+        "users": "908"
+    },
+    "104566": {
+        "KOD_ZSJ_P": "104566",
+        "hour": "23",
+        "day": "weekend",
+        "users": "49"
+    },
+    "104744": {
+        "KOD_ZSJ_P": "104744",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1085"
+    },
+    "104752": {
+        "KOD_ZSJ_P": "104752",
+        "hour": "23",
+        "day": "weekend",
+        "users": "6"
+    },
+    "104761": {
+        "KOD_ZSJ_P": "104761",
+        "hour": "23",
+        "day": "weekend",
+        "users": "818"
+    },
+    "104868": {
+        "KOD_ZSJ_P": "104868",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2261"
+    },
+    "105660": {
+        "KOD_ZSJ_P": "105660",
+        "hour": "23",
+        "day": "weekend",
+        "users": "882"
+    },
+    "106046": {
+        "KOD_ZSJ_P": "106046",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1481"
+    },
+    "109070": {
+        "KOD_ZSJ_P": "109070",
+        "hour": "23",
+        "day": "weekend",
+        "users": "285"
+    },
+    "109436": {
+        "KOD_ZSJ_P": "109436",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2699"
+    },
+    "111198": {
+        "KOD_ZSJ_P": "111198",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1159"
+    },
+    "111520": {
+        "KOD_ZSJ_P": "111520",
+        "hour": "23",
+        "day": "weekend",
+        "users": "751"
+    },
+    "112615": {
+        "KOD_ZSJ_P": "112615",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2905"
+    },
+    "112682": {
+        "KOD_ZSJ_P": "112682",
+        "hour": "23",
+        "day": "weekend",
+        "users": "867"
+    },
+    "113395": {
+        "KOD_ZSJ_P": "113395",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1574"
+    },
+    "116106": {
+        "KOD_ZSJ_P": "116106",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2373"
+    },
+    "116572": {
+        "KOD_ZSJ_P": "116572",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1385"
+    },
+    "118842": {
+        "KOD_ZSJ_P": "118842",
+        "hour": "23",
+        "day": "weekend",
+        "users": "52"
+    },
+    "124257": {
+        "KOD_ZSJ_P": "124257",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1283"
+    },
+    "124869": {
+        "KOD_ZSJ_P": "124869",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4783"
+    },
+    "124877": {
+        "KOD_ZSJ_P": "124877",
+        "hour": "23",
+        "day": "weekend",
+        "users": "138"
+    },
+    "125644": {
+        "KOD_ZSJ_P": "125644",
+        "hour": "23",
+        "day": "weekend",
+        "users": "181"
+    },
+    "125857": {
+        "KOD_ZSJ_P": "125857",
+        "hour": "23",
+        "day": "weekend",
+        "users": "647"
+    },
+    "125873": {
+        "KOD_ZSJ_P": "125873",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2793"
+    },
+    "126900": {
+        "KOD_ZSJ_P": "126900",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4866"
+    },
+    "126918": {
+        "KOD_ZSJ_P": "126918",
+        "hour": "23",
+        "day": "weekend",
+        "users": "471"
+    },
+    "133019": {
+        "KOD_ZSJ_P": "133019",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1736"
+    },
+    "133957": {
+        "KOD_ZSJ_P": "133957",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1121"
+    },
+    "135313": {
+        "KOD_ZSJ_P": "135313",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1207"
+    },
+    "135631": {
+        "KOD_ZSJ_P": "135631",
+        "hour": "23",
+        "day": "weekend",
+        "users": "615"
+    },
+    "136263": {
+        "KOD_ZSJ_P": "136263",
+        "hour": "23",
+        "day": "weekend",
+        "users": "818"
+    },
+    "138312": {
+        "KOD_ZSJ_P": "138312",
+        "hour": "23",
+        "day": "weekend",
+        "users": "401"
+    },
+    "138924": {
+        "KOD_ZSJ_P": "138924",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4901"
+    },
+    "138941": {
+        "KOD_ZSJ_P": "138941",
+        "hour": "23",
+        "day": "weekend",
+        "users": "113"
+    },
+    "138959": {
+        "KOD_ZSJ_P": "138959",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1072"
+    },
+    "140007": {
+        "KOD_ZSJ_P": "140007",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3167"
+    },
+    "141224": {
+        "KOD_ZSJ_P": "141224",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1841"
+    },
+    "141232": {
+        "KOD_ZSJ_P": "141232",
+        "hour": "23",
+        "day": "weekend",
+        "users": "241"
+    },
+    "141241": {
+        "KOD_ZSJ_P": "141241",
+        "hour": "23",
+        "day": "weekend",
+        "users": "457"
+    },
+    "141259": {
+        "KOD_ZSJ_P": "141259",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "141267": {
+        "KOD_ZSJ_P": "141267",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "141275": {
+        "KOD_ZSJ_P": "141275",
+        "hour": "23",
+        "day": "weekend",
+        "users": "45"
+    },
+    "141283": {
+        "KOD_ZSJ_P": "141283",
+        "hour": "23",
+        "day": "weekend",
+        "users": "23"
+    },
+    "141291": {
+        "KOD_ZSJ_P": "141291",
+        "hour": "23",
+        "day": "weekend",
+        "users": "15"
+    },
+    "141305": {
+        "KOD_ZSJ_P": "141305",
+        "hour": "23",
+        "day": "weekend",
+        "users": "850"
+    },
+    "141313": {
+        "KOD_ZSJ_P": "141313",
+        "hour": "23",
+        "day": "weekend",
+        "users": "59"
+    },
+    "141321": {
+        "KOD_ZSJ_P": "141321",
+        "hour": "23",
+        "day": "weekend",
+        "users": "585"
+    },
+    "141330": {
+        "KOD_ZSJ_P": "141330",
+        "hour": "23",
+        "day": "weekend",
+        "users": "457"
+    },
+    "141348": {
+        "KOD_ZSJ_P": "141348",
+        "hour": "23",
+        "day": "weekend",
+        "users": "0"
+    },
+    "142239": {
+        "KOD_ZSJ_P": "142239",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5651"
+    },
+    "143294": {
+        "KOD_ZSJ_P": "143294",
+        "hour": "23",
+        "day": "weekend",
+        "users": "347"
+    },
+    "145424": {
+        "KOD_ZSJ_P": "145424",
+        "hour": "23",
+        "day": "weekend",
+        "users": "279"
+    },
+    "145441": {
+        "KOD_ZSJ_P": "145441",
+        "hour": "23",
+        "day": "weekend",
+        "users": "755"
+    },
+    "145548": {
+        "KOD_ZSJ_P": "145548",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5099"
+    },
+    "147583": {
+        "KOD_ZSJ_P": "147583",
+        "hour": "23",
+        "day": "weekend",
+        "users": "751"
+    },
+    "147818": {
+        "KOD_ZSJ_P": "147818",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1056"
+    },
+    "147842": {
+        "KOD_ZSJ_P": "147842",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1174"
+    },
+    "150304": {
+        "KOD_ZSJ_P": "150304",
+        "hour": "23",
+        "day": "weekend",
+        "users": "863"
+    },
+    "151092": {
+        "KOD_ZSJ_P": "151092",
+        "hour": "23",
+        "day": "weekend",
+        "users": "125"
+    },
+    "151912": {
+        "KOD_ZSJ_P": "151912",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2130"
+    },
+    "152145": {
+        "KOD_ZSJ_P": "152145",
+        "hour": "23",
+        "day": "weekend",
+        "users": "877"
+    },
+    "152196": {
+        "KOD_ZSJ_P": "152196",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2736"
+    },
+    "157431": {
+        "KOD_ZSJ_P": "157431",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2912"
+    },
+    "160881": {
+        "KOD_ZSJ_P": "160881",
+        "hour": "23",
+        "day": "weekend",
+        "users": "572"
+    },
+    "161837": {
+        "KOD_ZSJ_P": "161837",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1080"
+    },
+    "162043": {
+        "KOD_ZSJ_P": "162043",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1084"
+    },
+    "162256": {
+        "KOD_ZSJ_P": "162256",
+        "hour": "23",
+        "day": "weekend",
+        "users": "230"
+    },
+    "162264": {
+        "KOD_ZSJ_P": "162264",
+        "hour": "23",
+        "day": "weekend",
+        "users": "982"
+    },
+    "162680": {
+        "KOD_ZSJ_P": "162680",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2599"
+    },
+    "162795": {
+        "KOD_ZSJ_P": "162795",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1152"
+    },
+    "163503": {
+        "KOD_ZSJ_P": "163503",
+        "hour": "23",
+        "day": "weekend",
+        "users": "361"
+    },
+    "165751": {
+        "KOD_ZSJ_P": "165751",
+        "hour": "23",
+        "day": "weekend",
+        "users": "255"
+    },
+    "165760": {
+        "KOD_ZSJ_P": "165760",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1182"
+    },
+    "166677": {
+        "KOD_ZSJ_P": "166677",
+        "hour": "23",
+        "day": "weekend",
+        "users": "682"
+    },
+    "166863": {
+        "KOD_ZSJ_P": "166863",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1071"
+    },
+    "167371": {
+        "KOD_ZSJ_P": "167371",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1231"
+    },
+    "167380": {
+        "KOD_ZSJ_P": "167380",
+        "hour": "23",
+        "day": "weekend",
+        "users": "265"
+    },
+    "167398": {
+        "KOD_ZSJ_P": "167398",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1277"
+    },
+    "167401": {
+        "KOD_ZSJ_P": "167401",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "167410": {
+        "KOD_ZSJ_P": "167410",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "167428": {
+        "KOD_ZSJ_P": "167428",
+        "hour": "23",
+        "day": "weekend",
+        "users": "192"
+    },
+    "167436": {
+        "KOD_ZSJ_P": "167436",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1"
+    },
+    "167444": {
+        "KOD_ZSJ_P": "167444",
+        "hour": "23",
+        "day": "weekend",
+        "users": "113"
+    },
+    "167452": {
+        "KOD_ZSJ_P": "167452",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1221"
+    },
+    "167461": {
+        "KOD_ZSJ_P": "167461",
+        "hour": "23",
+        "day": "weekend",
+        "users": "669"
+    },
+    "167479": {
+        "KOD_ZSJ_P": "167479",
+        "hour": "23",
+        "day": "weekend",
+        "users": "120"
+    },
+    "167495": {
+        "KOD_ZSJ_P": "167495",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2921"
+    },
+    "167525": {
+        "KOD_ZSJ_P": "167525",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "168050": {
+        "KOD_ZSJ_P": "168050",
+        "hour": "23",
+        "day": "weekend",
+        "users": "254"
+    },
+    "168556": {
+        "KOD_ZSJ_P": "168556",
+        "hour": "23",
+        "day": "weekend",
+        "users": "968"
+    },
+    "168718": {
+        "KOD_ZSJ_P": "168718",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2595"
+    },
+    "168726": {
+        "KOD_ZSJ_P": "168726",
+        "hour": "23",
+        "day": "weekend",
+        "users": "316"
+    },
+    "168734": {
+        "KOD_ZSJ_P": "168734",
+        "hour": "23",
+        "day": "weekend",
+        "users": "848"
+    },
+    "171972": {
+        "KOD_ZSJ_P": "171972",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1001"
+    },
+    "173908": {
+        "KOD_ZSJ_P": "173908",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3363"
+    },
+    "173916": {
+        "KOD_ZSJ_P": "173916",
+        "hour": "23",
+        "day": "weekend",
+        "users": "240"
+    },
+    "174645": {
+        "KOD_ZSJ_P": "174645",
+        "hour": "23",
+        "day": "weekend",
+        "users": "811"
+    },
+    "175552": {
+        "KOD_ZSJ_P": "175552",
+        "hour": "23",
+        "day": "weekend",
+        "users": "693"
+    },
+    "177334": {
+        "KOD_ZSJ_P": "177334",
+        "hour": "23",
+        "day": "weekend",
+        "users": "718"
+    },
+    "177636": {
+        "KOD_ZSJ_P": "177636",
+        "hour": "23",
+        "day": "weekend",
+        "users": "943"
+    },
+    "177873": {
+        "KOD_ZSJ_P": "177873",
+        "hour": "23",
+        "day": "weekend",
+        "users": "707"
+    },
+    "177881": {
+        "KOD_ZSJ_P": "177881",
+        "hour": "23",
+        "day": "weekend",
+        "users": "124"
+    },
+    "177890": {
+        "KOD_ZSJ_P": "177890",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1044"
+    },
+    "178802": {
+        "KOD_ZSJ_P": "178802",
+        "hour": "23",
+        "day": "weekend",
+        "users": "509"
+    },
+    "179221": {
+        "KOD_ZSJ_P": "179221",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2006"
+    },
+    "181293": {
+        "KOD_ZSJ_P": "181293",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1575"
+    },
+    "181307": {
+        "KOD_ZSJ_P": "181307",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4611"
+    },
+    "181315": {
+        "KOD_ZSJ_P": "181315",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1008"
+    },
+    "182362": {
+        "KOD_ZSJ_P": "182362",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1061"
+    },
+    "183300": {
+        "KOD_ZSJ_P": "183300",
+        "hour": "23",
+        "day": "weekend",
+        "users": "960"
+    },
+    "184560": {
+        "KOD_ZSJ_P": "184560",
+        "hour": "23",
+        "day": "weekend",
+        "users": "720"
+    },
+    "185400": {
+        "KOD_ZSJ_P": "185400",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1809"
+    },
+    "185515": {
+        "KOD_ZSJ_P": "185515",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3070"
+    },
+    "187071": {
+        "KOD_ZSJ_P": "187071",
+        "hour": "23",
+        "day": "weekend",
+        "users": "323"
+    },
+    "188328": {
+        "KOD_ZSJ_P": "188328",
+        "hour": "23",
+        "day": "weekend",
+        "users": "909"
+    },
+    "190471": {
+        "KOD_ZSJ_P": "190471",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1618"
+    },
+    "191116": {
+        "KOD_ZSJ_P": "191116",
+        "hour": "23",
+        "day": "weekend",
+        "users": "111"
+    },
+    "191124": {
+        "KOD_ZSJ_P": "191124",
+        "hour": "23",
+        "day": "weekend",
+        "users": "275"
+    },
+    "191132": {
+        "KOD_ZSJ_P": "191132",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1119"
+    },
+    "192104": {
+        "KOD_ZSJ_P": "192104",
+        "hour": "23",
+        "day": "weekend",
+        "users": "184"
+    },
+    "192112": {
+        "KOD_ZSJ_P": "192112",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3989"
+    },
+    "192121": {
+        "KOD_ZSJ_P": "192121",
+        "hour": "23",
+        "day": "weekend",
+        "users": "530"
+    },
+    "194123": {
+        "KOD_ZSJ_P": "194123",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1332"
+    },
+    "194727": {
+        "KOD_ZSJ_P": "194727",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1650"
+    },
+    "195677": {
+        "KOD_ZSJ_P": "195677",
+        "hour": "23",
+        "day": "weekend",
+        "users": "6045"
+    },
+    "195961": {
+        "KOD_ZSJ_P": "195961",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1797"
+    },
+    "196703": {
+        "KOD_ZSJ_P": "196703",
+        "hour": "23",
+        "day": "weekend",
+        "users": "769"
+    },
+    "196711": {
+        "KOD_ZSJ_P": "196711",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4"
+    },
+    "196720": {
+        "KOD_ZSJ_P": "196720",
+        "hour": "23",
+        "day": "weekend",
+        "users": "861"
+    },
+    "196738": {
+        "KOD_ZSJ_P": "196738",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "196746": {
+        "KOD_ZSJ_P": "196746",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "196754": {
+        "KOD_ZSJ_P": "196754",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1203"
+    },
+    "196762": {
+        "KOD_ZSJ_P": "196762",
+        "hour": "23",
+        "day": "weekend",
+        "users": "29"
+    },
+    "196771": {
+        "KOD_ZSJ_P": "196771",
+        "hour": "23",
+        "day": "weekend",
+        "users": "899"
+    },
+    "300659": {
+        "KOD_ZSJ_P": "300659",
+        "hour": "23",
+        "day": "weekend",
+        "users": "126"
+    },
+    "303941": {
+        "KOD_ZSJ_P": "303941",
+        "hour": "23",
+        "day": "weekend",
+        "users": "215"
+    },
+    "303968": {
+        "KOD_ZSJ_P": "303968",
+        "hour": "23",
+        "day": "weekend",
+        "users": "7"
+    },
+    "303976": {
+        "KOD_ZSJ_P": "303976",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "303984": {
+        "KOD_ZSJ_P": "303984",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "303992": {
+        "KOD_ZSJ_P": "303992",
+        "hour": "23",
+        "day": "weekend",
+        "users": "4101"
+    },
+    "304000": {
+        "KOD_ZSJ_P": "304000",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2577"
+    },
+    "304018": {
+        "KOD_ZSJ_P": "304018",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1094"
+    },
+    "304026": {
+        "KOD_ZSJ_P": "304026",
+        "hour": "23",
+        "day": "weekend",
+        "users": "902"
+    },
+    "304034": {
+        "KOD_ZSJ_P": "304034",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1555"
+    },
+    "304042": {
+        "KOD_ZSJ_P": "304042",
+        "hour": "23",
+        "day": "weekend",
+        "users": "357"
+    },
+    "304051": {
+        "KOD_ZSJ_P": "304051",
+        "hour": "23",
+        "day": "weekend",
+        "users": "22"
+    },
+    "304069": {
+        "KOD_ZSJ_P": "304069",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2300"
+    },
+    "304077": {
+        "KOD_ZSJ_P": "304077",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1935"
+    },
+    "304085": {
+        "KOD_ZSJ_P": "304085",
+        "hour": "23",
+        "day": "weekend",
+        "users": "171"
+    },
+    "304522": {
+        "KOD_ZSJ_P": "304522",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "304531": {
+        "KOD_ZSJ_P": "304531",
+        "hour": "23",
+        "day": "weekend",
+        "users": "664"
+    },
+    "304549": {
+        "KOD_ZSJ_P": "304549",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1173"
+    },
+    "304557": {
+        "KOD_ZSJ_P": "304557",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2401"
+    },
+    "304565": {
+        "KOD_ZSJ_P": "304565",
+        "hour": "23",
+        "day": "weekend",
+        "users": "695"
+    },
+    "304573": {
+        "KOD_ZSJ_P": "304573",
+        "hour": "23",
+        "day": "weekend",
+        "users": "53"
+    },
+    "304581": {
+        "KOD_ZSJ_P": "304581",
+        "hour": "23",
+        "day": "weekend",
+        "users": "8"
+    },
+    "304590": {
+        "KOD_ZSJ_P": "304590",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "304603": {
+        "KOD_ZSJ_P": "304603",
+        "hour": "23",
+        "day": "weekend",
+        "users": "15"
+    },
+    "304611": {
+        "KOD_ZSJ_P": "304611",
+        "hour": "23",
+        "day": "weekend",
+        "users": "553"
+    },
+    "304620": {
+        "KOD_ZSJ_P": "304620",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "304638": {
+        "KOD_ZSJ_P": "304638",
+        "hour": "23",
+        "day": "weekend",
+        "users": "7"
+    },
+    "304646": {
+        "KOD_ZSJ_P": "304646",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3"
+    },
+    "312975": {
+        "KOD_ZSJ_P": "312975",
+        "hour": "23",
+        "day": "weekend",
+        "users": "333"
+    },
+    "312983": {
+        "KOD_ZSJ_P": "312983",
+        "hour": "23",
+        "day": "weekend",
+        "users": "474"
+    },
+    "312991": {
+        "KOD_ZSJ_P": "312991",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1830"
+    },
+    "313009": {
+        "KOD_ZSJ_P": "313009",
+        "hour": "23",
+        "day": "weekend",
+        "users": "7"
+    },
+    "313246": {
+        "KOD_ZSJ_P": "313246",
+        "hour": "23",
+        "day": "weekend",
+        "users": "18"
+    },
+    "313254": {
+        "KOD_ZSJ_P": "313254",
+        "hour": "23",
+        "day": "weekend",
+        "users": "11"
+    },
+    "313262": {
+        "KOD_ZSJ_P": "313262",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "313271": {
+        "KOD_ZSJ_P": "313271",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1331"
+    },
+    "313289": {
+        "KOD_ZSJ_P": "313289",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "313297": {
+        "KOD_ZSJ_P": "313297",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1515"
+    },
+    "313301": {
+        "KOD_ZSJ_P": "313301",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3204"
+    },
+    "313319": {
+        "KOD_ZSJ_P": "313319",
+        "hour": "23",
+        "day": "weekend",
+        "users": "192"
+    },
+    "313327": {
+        "KOD_ZSJ_P": "313327",
+        "hour": "23",
+        "day": "weekend",
+        "users": "86"
+    },
+    "313343": {
+        "KOD_ZSJ_P": "313343",
+        "hour": "23",
+        "day": "weekend",
+        "users": "523"
+    },
+    "313351": {
+        "KOD_ZSJ_P": "313351",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1827"
+    },
+    "313360": {
+        "KOD_ZSJ_P": "313360",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3719"
+    },
+    "313378": {
+        "KOD_ZSJ_P": "313378",
+        "hour": "23",
+        "day": "weekend",
+        "users": "509"
+    },
+    "313386": {
+        "KOD_ZSJ_P": "313386",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2367"
+    },
+    "313394": {
+        "KOD_ZSJ_P": "313394",
+        "hour": "23",
+        "day": "weekend",
+        "users": "376"
+    },
+    "313408": {
+        "KOD_ZSJ_P": "313408",
+        "hour": "23",
+        "day": "weekend",
+        "users": "13"
+    },
+    "313416": {
+        "KOD_ZSJ_P": "313416",
+        "hour": "23",
+        "day": "weekend",
+        "users": "30"
+    },
+    "313424": {
+        "KOD_ZSJ_P": "313424",
+        "hour": "23",
+        "day": "weekend",
+        "users": "53"
+    },
+    "313475": {
+        "KOD_ZSJ_P": "313475",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2205"
+    },
+    "313483": {
+        "KOD_ZSJ_P": "313483",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1210"
+    },
+    "313491": {
+        "KOD_ZSJ_P": "313491",
+        "hour": "23",
+        "day": "weekend",
+        "users": "3261"
+    },
+    "313505": {
+        "KOD_ZSJ_P": "313505",
+        "hour": "23",
+        "day": "weekend",
+        "users": "48"
+    },
+    "313513": {
+        "KOD_ZSJ_P": "313513",
+        "hour": "23",
+        "day": "weekend",
+        "users": "2"
+    },
+    "313521": {
+        "KOD_ZSJ_P": "313521",
+        "hour": "23",
+        "day": "weekend",
+        "users": "1"
+    },
+    "313530": {
+        "KOD_ZSJ_P": "313530",
+        "hour": "23",
+        "day": "weekend",
+        "users": "218"
+    },
+    "318523": {
+        "KOD_ZSJ_P": "318523",
+        "hour": "23",
+        "day": "weekend",
+        "users": "461"
+    },
+    "318531": {
+        "KOD_ZSJ_P": "318531",
+        "hour": "23",
+        "day": "weekend",
+        "users": "892"
+    },
+    "320633": {
+        "KOD_ZSJ_P": "320633",
+        "hour": "23",
+        "day": "weekend",
+        "users": "358"
+    },
+    "320790": {
+        "KOD_ZSJ_P": "320790",
+        "hour": "23",
+        "day": "weekend",
+        "users": "5"
+    },
+    "320803": {
+        "KOD_ZSJ_P": "320803",
+        "hour": "23",
+        "day": "weekend",
+        "users": "545"
+    },
+    "320811": {
+        "KOD_ZSJ_P": "320811",
+        "hour": "23",
+        "day": "weekend",
+        "users": "174"
+    },
+    "320820": {
+        "KOD_ZSJ_P": "320820",
+        "hour": "23",
+        "day": "weekend",
+        "users": "176"
+    }
+}
