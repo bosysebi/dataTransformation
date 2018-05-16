@@ -387,12 +387,16 @@ def changeFormat(tree):
     return children
 
 def removeSingleNodes(tree):
-    for place in tree["children"]:
-        print(place["name"])
+    for place in tree:
+        if len(place["children"])==0:
+            return tree
         removeSingleNodes(place["children"])
+        if len(place["children"])==1:
+            print(place["name"])
+            place["children"] = place["children"][0]["children"]
     return tree
 
-bmo = "bmo_db.csv"
+bmo = "testing.csv"
 testJson = "Zones.json"
 testJson2 = "test.json"
 zuj = "ZUJ.csv"
@@ -401,11 +405,13 @@ zujDict = getZujData(zuj)
 data = mergeDataSets(data, zujDict)
 tree = createDict2(data, tree())
 test = (changeFormat(tree))
-#removeSingleNodes = removeSingleNodes(test)
+removeSingleNodes = removeSingleNodes(test)
 final = {}
 final["data"] = test
 with open(testJson, "w") as jsonFile:
+    jsonFile.write(json.dumps(removeSingleNodes, indent=4))
+"""with open(testJson, "w") as jsonFile:
     jsonFile.write(json.dumps(tree, indent=4))
 with open(testJson2, "w") as jsonFile:
-    jsonFile.write(json.dumps(final, indent=4))
+    jsonFile.write(json.dumps(final, indent=4))"""
 
