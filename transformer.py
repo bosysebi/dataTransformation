@@ -370,25 +370,42 @@ def addArrays(array1, array2):
 
 
 def changeFormat(tree):
-    final = {}
+    children = []
     if len(tree) == 0:
         return
     for key, value in tree.items():
         if(type(tree[key]) is dict):
-            print(tree[key]["name"])
-            changeFormat(tree[key])
-    return final
+            newEle = {
+                "name": tree[key]["name"],
+                "id": tree[key]["id"],
+                "type": tree[key]["type"],
+                "workday": tree[key]["workday"],
+                "weekend": tree[key]["weekend"],
+                "children": changeFormat(tree[key])
+            }
+            children.append(newEle)
+    return children
 
-
+def removeSingleNodes(tree):
+    for place in tree["children"]:
+        print(place["name"])
+        removeSingleNodes(place["children"])
+    return tree
 
 bmo = "bmo_db.csv"
 testJson = "Zones.json"
+testJson2 = "test.json"
 zuj = "ZUJ.csv"
 data = groupByCode(dataLoad(bmo))
 zujDict = getZujData(zuj)
 data = mergeDataSets(data, zujDict)
 tree = createDict2(data, tree())
-changeFormat(tree)
+test = (changeFormat(tree))
+#removeSingleNodes = removeSingleNodes(test)
+final = {}
+final["data"] = test
 with open(testJson, "w") as jsonFile:
     jsonFile.write(json.dumps(tree, indent=4))
+with open(testJson2, "w") as jsonFile:
+    jsonFile.write(json.dumps(final, indent=4))
 
