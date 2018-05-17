@@ -392,13 +392,11 @@ def removeSingleNodes(tree):
             return tree
         removeSingleNodes(place["children"])
         if len(place["children"])==1:
-            print(place["name"])
             place["children"] = place["children"][0]["children"]
     return tree
 
-bmo = "testing.csv"
+bmo = "bmo_db.csv"
 testJson = "Zones.json"
-testJson2 = "test.json"
 zuj = "ZUJ.csv"
 data = groupByCode(dataLoad(bmo))
 zujDict = getZujData(zuj)
