@@ -1,6 +1,10 @@
 import csv
 import collections
 import json
+import sys
+import logging
+import os.path
+from pathlib import Path
 
 # read csv and add to dictionary
 def dataLoad(name):
@@ -297,7 +301,7 @@ def removeSingleNodes(tree):
         if len(place["children"])==1:
             place["children"] = place["children"][0]["children"]
     return tree
-
+"""
 bmo = "bmo_db.csv"
 result = "Zones.json"
 zuj = "ZUJ.csv"
@@ -311,3 +315,44 @@ final = {}
 final["data"] = data
 with open(result,"w", encoding="utf8") as jsonFile:
     json.dump(final, jsonFile, ensure_ascii=False)
+"""
+
+
+def createJSON():
+    if len(sys.argv) == 2:
+        inputfile = sys.argv[1]
+        outputfile = "Zones.json"
+    elif len(sys.argv) == 3:
+        inputfile = sys.argv[1]
+        outpufile = sys.argv[2]
+    elif len(sys.argv)>3:
+        logging.error("Too many arguments \n1:Input file \n 2:Output file")
+        sys.exit(1)
+    else:
+        inputfile = "bmo_db.csv"
+        outputfile = "Zones.json"
+    zuj = "ZUJ.csv"
+    if not os.path.isfile(inputfile):
+        logging.error("Invalid path to csv source")
+        sys.exit(1)
+    if not os.path.isfile(zuj):
+        logging.error("Cannot find ZUJ in directory, please check if it's present")
+        sys.exit(1)
+    processsing = groupByCode(dataLoad(inputfile))
+    zujDict = getZujData(zuj)
+    processsing = mergeDataSets(processsing, zujDict)
+    processsing = createDict2(processsing, tree())
+    processsing = (changeFormat(processsing))
+    processsing = removeSingleNodes(processsing)
+    final = {}
+    final["data"] = processsing
+    with open(outputfile, "w", encoding="utf8") as jsonFile:
+        json.dump(final, jsonFile, ensure_ascii=False)
+
+
+
+
+
+if __name__ == "__main__":
+    createJSON();
+
