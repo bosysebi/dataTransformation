@@ -3,17 +3,6 @@ import collections
 import json
 
 # read csv and add to dictionary
-
-"""data = {}
-with open(bmo) as bmo:
-    csvReader = csv.DictReader(bmo, delimiter=";")
-    for bmoRow in csvReader:
-        ZSJ = bmoRow["KOD_ZSJ_P"]
-        data[ZSJ] = bmoRow
-
-with open(testJson, "w") as jsonFile:
-    jsonFile.write(json.dumps(data, indent=4))"""
-
 def dataLoad(name):
     zonedata = []
     with open(name) as file:
@@ -24,6 +13,7 @@ def dataLoad(name):
             i = i + 1
     return zonedata
 
+#Groups all our BMO data into one entry, with two arrays with numbers, one for weekend, one for workday
 def groupByCode(data):
     i = 1;
     newData =  []
@@ -43,6 +33,7 @@ def groupByCode(data):
         newData.append(line)
     return newData
 
+#Opens CSV ZUJ data
 def getZujData(zuj):
     data = {}
     with open(zuj, "r", encoding="latin2") as bmo:
@@ -52,6 +43,8 @@ def getZujData(zuj):
             data[ZSJ] = bmoRow
     return data
 
+#Merges the BMO data with ZUJ data to create an array, one line in array is one UTJ Unit data
+#Merges them through ZSJ CODE
 def mergeDataSets(data, dictionary):
     newDataSet = []
     for place in data:
@@ -60,97 +53,13 @@ def mergeDataSets(data, dictionary):
         newDataSet.append(line)
     return newDataSet
 
+#Definitin for default dictionary, I need a multidimensional dicitonary
 def tree():
     return collections.defaultdict(tree)
 
-def createDict(data, tree):
-    for line in data:
-        if line[3]["NAZ_CZNUTS3"] in tree:
-            if line[3]["NAZ_LAU1"] in tree[line[3]["NAZ_CZNUTS3"]]:
-                if line[3]["NAZ_OBEC"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]:
-                    if line[3]["NAZ_ZUJ"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]:
-                        if line[3]["NAZ_KU"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]:
-                            if line[3]["NAZ_UTJ"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]:
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]] = {}
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["name"] = line[3]["NAZ_ZSJ"]
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["id"] = line[0]
-                            else:
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]] = {}
-                        else:
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]] = {}
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["name"] = line[3]["NAZ_KU"]
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]] = {}
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["name"] = line[3]["NAZ_UTJ"]
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]] = {}
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["id"] = line[0]
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["name"] = line[3]["NAZ_ZSJ"]
-                    else:
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]] = {}
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["name"] = line[3]["NAZ_ZUJ"]
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]] = {}
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["name"] = line[3]["NAZ_KU"]
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]] = {}
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["name"] = line[3]["NAZ_UTJ"]
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]] = {}
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["id"] = line[0]
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["name"] = line[3]["NAZ_ZSJ"]
-                else:
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]] = {}
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["name"] = line[3]["NAZ_OBEC"]
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["typ"] = "obec"
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]] = {}
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["name"] = line[3]["NAZ_ZUJ"]
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["typ"] = "zakladna uzemna jednotka"
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]] = {}
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["name"] = line[3]["NAZ_KU"]
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]] = {}
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["name"] = line[3]["NAZ_UTJ"]
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]] = {}
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["id"] = line[0]
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["name"] = line[3]["NAZ_ZSJ"]
-            else:
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]] = {}
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["name"] = line[3]["NAZ_LAU1"]
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["typ"] = "lau1"
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]] = {}
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["name"] = line[3]["NAZ_OBEC"]
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["typ"] = "obec"
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]] = {}
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["name"] = line[3]["NAZ_ZUJ"]
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["typ"] = "zakladna uzemna jednotka"
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]] = {}
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["name"] = line[3]["NAZ_KU"]
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]] = {}
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["name"] = line[3]["NAZ_UTJ"]
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]] = {}
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["name"] = line[3]["NAZ_ZSJ"]
-                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["id"] = line[0]
-        else:
-            tree[line[3]["NAZ_CZNUTS3"]] = {}
-            tree[line[3]["NAZ_CZNUTS3"]]["name"] = line[3]["NAZ_CZNUTS3"]
-            tree[line[3]["NAZ_CZNUTS3"]]["typ"] = "kraj"
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]] = {}
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["name"] = line[3]["NAZ_LAU1"]
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["typ"] = "lau1"
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]] = {}
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["name"] = line[3]["NAZ_OBEC"]
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["typ"] = "obec"
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]] = {}
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["name"] = line[3]["NAZ_ZUJ"]
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["typ"] = "zakladna uzemna jednotka"
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]] = {}
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["name"] = line[3]["NAZ_KU"]
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["typ"] = "katastralne uzemie"
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]] = {}
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["name"] = line[3]["NAZ_UTJ"]
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["typ"] = "uzemna technicka jednotka"
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]] = {}
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["name"] = line[3]["NAZ_ZSJ"]
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["typ"] = "zakladna uzemna jednotka"
-            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]][line[3]["NAZ_ZSJ"]]["id"] = line[0]
-    print(tree)
-    return tree;
-
+#MAIN SORTING
+#Uses default dictionary, checks for each key, if present, goes deeper, if not,
+#creates and empty dictionary all the way to the NAZ_UTJ level
 def createDict2(data, tree):
     i = 0;
     for line in data:
@@ -161,7 +70,7 @@ def createDict2(data, tree):
                         if line[3]["NAZ_KU"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]:
                             if line[3]["NAZ_UTJ"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]:
                                 if line[3]["NAZ_ZSJ"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]:
-                                    print(line)
+                                    pass;
                                 else:
                                     tree[line[3]["NAZ_CZNUTS3"]]["workday"] = addArrays(
                                         tree[line[3]["NAZ_CZNUTS3"]]["workday"], line[1])
@@ -342,6 +251,8 @@ def createDict2(data, tree):
             i += 1
     return tree
 
+
+#Helper function, creates a path in the default dictionary
 def createPath(tree, path, line, type, id):
     tree[path] = {}
     tree[path]["name"] = path
@@ -351,24 +262,14 @@ def createPath(tree, path, line, type, id):
     tree[path]["weekend"] = addArrays([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], line[2])
     tree[path]["children"] = []
 
-def appendChild(tree, path, line, type, id):
-    newTree = {
-        "name": path,
-        "id": id,
-        "type": type,
-        "workday": line[1],
-        "weekend": line[2],
-    }
-    tree["children"].append(newTree)
 
-
-
+#helper function, returns array that is sum of two given
 def addArrays(array1, array2):
     for i in range(len(array1)):
         array1[i] = array1[i] + array2[i]
     return array1
 
-
+#changes dictionary format according to schema in mobile presence
 def changeFormat(tree):
     children = []
     if len(tree) == 0:
@@ -386,6 +287,8 @@ def changeFormat(tree):
             children.append(newEle)
     return children
 
+
+#Removes the inbetween nodes when node has only one descendant
 def removeSingleNodes(tree):
     for place in tree:
         if len(place["children"])==0:
@@ -396,20 +299,16 @@ def removeSingleNodes(tree):
     return tree
 
 bmo = "bmo_db.csv"
-testJson = "Zones.json"
+result = "Zones.json"
 zuj = "ZUJ.csv"
 data = groupByCode(dataLoad(bmo))
 zujDict = getZujData(zuj)
 data = mergeDataSets(data, zujDict)
-tree = createDict2(data, tree())
-test = (changeFormat(tree))
-removeSingleNodes = removeSingleNodes(test)
+data = createDict2(data, tree())
+data = (changeFormat(data))
+data = removeSingleNodes(data)
 final = {}
-final["data"] = test
-with open(testJson, "w") as jsonFile:
-    jsonFile.write(json.dumps(removeSingleNodes, indent=4))
-"""with open(testJson, "w") as jsonFile:
-    jsonFile.write(json.dumps(tree, indent=4))
-with open(testJson2, "w") as jsonFile:
-    jsonFile.write(json.dumps(final, indent=4))"""
+final["data"] = data
+with open("result", "w") as jsonFile:
+    jsonFile.write(json.dumps(data, indent=4))
 
