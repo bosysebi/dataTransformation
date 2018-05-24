@@ -36,11 +36,11 @@ def groupByCode(data):
 #Opens CSV ZUJ data
 def getZujData(zuj):
     data = {}
-    with open(zuj, "r", encoding="latin2") as bmo:
-        csvReader = csv.DictReader(bmo, delimiter=";")
-        for bmoRow in csvReader:
-            ZSJ = bmoRow["KOD_ZSJ"]
-            data[ZSJ] = bmoRow
+    with open(zuj, "r", encoding="windows-1250") as zj:
+        csvReader = csv.DictReader(zj, delimiter=";")
+        for zujRow in csvReader:
+            ZSJ = zujRow["KOD_ZSJ"]
+            data[ZSJ] = zujRow
     return data
 
 #Merges the BMO data with ZUJ data to create an array, one line in array is one UTJ Unit data
@@ -309,6 +309,5 @@ data = (changeFormat(data))
 data = removeSingleNodes(data)
 final = {}
 final["data"] = data
-with open("result", "w") as jsonFile:
-    jsonFile.write(json.dumps(data, indent=4))
-
+with open(result,"w", encoding="utf8") as jsonFile:
+    json.dump(final, jsonFile, ensure_ascii=False)
