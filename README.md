@@ -4,7 +4,7 @@ A python script that transforms csv data to a JSON file to be used by mobile-pre
 
 https://github.com/jirmed/mobile-presence
 
-#Data
+# Data
 
 Script uses data which can be found in bmo_db.csv, the source of which can be found here.
 
