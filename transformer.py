@@ -57,15 +57,18 @@ def mergeDataSets(data, dictionary):
         newDataSet.append(line)
     return newDataSet
 
-#Definitin for default dictionary, I need a multidimensional dicitonary
+#Definitin for default dictionary, I need a multidimensional dictionary
 def tree():
     return collections.defaultdict(tree)
 
+"""
 #MAIN SORTING
 #Uses default dictionary, checks for each key, if present, goes deeper, if not,
 #creates and empty dictionary all the way to the NAZ_UTJ level
 def createDict2(data, tree):
-    i = 0;
+    i = 0
+    unitName = ["NAZ_CZNUTS3", "NAZ_LAU1", "NAZ_OBEC", "NAZ_ZUJ", "NAZ_KU", "NAZ_UTJ", "NAZ_ZSJ"]
+    shortName = ["kraj", "lau1", "obec", "zuj", "ku", "tuj", "zsj"]
     for line in data:
         if line[3]["NAZ_CZNUTS3"] in tree:
             if line[3]["NAZ_LAU1"] in tree[line[3]["NAZ_CZNUTS3"]]:
@@ -76,185 +79,123 @@ def createDict2(data, tree):
                                 if line[3]["NAZ_ZSJ"] in tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]:
                                     pass;
                                 else:
-                                    tree[line[3]["NAZ_CZNUTS3"]]["workday"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]]["workday"], line[1])
-                                    tree[line[3]["NAZ_CZNUTS3"]]["weekend"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]]["weekend"], line[2])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"], line[1])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"], line[2])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        "workday"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            "workday"], line[1])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        "weekend"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            "weekend"], line[2])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]]["workday"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            line[3]["NAZ_ZUJ"]]["workday"], line[1])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]]["weekend"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            line[3]["NAZ_ZUJ"]]["weekend"], line[2])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["workday"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["workday"], line[1])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["weekend"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["weekend"], line[2])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["workday"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["workday"], line[1])
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["weekend"] = addArrays(
-                                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                            line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]]["weekend"], line[2])
-                                    createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]
-                                        [line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]], line[3]["NAZ_ZSJ"], line, "zsj", i)
-                                    i += 1
+                                    tempTree = tree[line[3][unitName[0]]][line[3][unitName[1]]][line[3][unitName[2]]][
+                                        line[3][unitName[3]]][line[3][unitName[4]]][line[3][unitName[5]]]
+                                    for j in range(6, len(unitName)):
+                                        createPath(tempTree, line[3][unitName[j]], line, shortName[j], i)
+                                        i += 1
+                                        tempTree = tempTree[line[3][unitName[j]]]
+                                    tempTree = tree
+                                    for k in range(6):
+                                        tempTree[line[3][unitName[k]]]['workday'] = addArrays(
+                                            tempTree[line[3][unitName[k]]]['workday'], line[1])
+                                        tempTree[line[3][unitName[k]]]['weekend'] = addArrays(
+                                            tempTree[line[3][unitName[k]]]['weekend'], line[2])
+                                        if k + 1 != 6:
+                                            tempTree = tempTree[line[3][unitName[k]]]
                             else:
-                                tree[line[3]["NAZ_CZNUTS3"]]["workday"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]]["workday"], line[1])
-                                tree[line[3]["NAZ_CZNUTS3"]]["weekend"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]]["weekend"], line[2])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"], line[1])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"], line[2])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["workday"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["workday"],line[1])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["weekend"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["weekend"],line[2])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["workday"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["workday"], line[1])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["weekend"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["weekend"], line[2])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["workday"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["workday"], line[1])
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["weekend"] = addArrays(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]]["weekend"], line[2])
-                                createPath(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]], line[3]["NAZ_UTJ"], line, "tuj", i)
-                                i += 1
-                                createPath(
-                                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][
-                                        line[3]["NAZ_ZUJ"]][
-                                        line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]], line[3]["NAZ_ZSJ"], line, "zsj", i)
-                                i += 1
+                                tempTree = tree[line[3][unitName[0]]][line[3][unitName[1]]][line[3][unitName[2]]][
+                                    line[3][unitName[3]]][line[3][unitName[4]]]
+                                for j in range(5, len(unitName)):
+                                    createPath(tempTree, line[3][unitName[j]], line, shortName[j], i)
+                                    i += 1
+                                    tempTree = tempTree[line[3][unitName[j]]]
+                                tempTree = tree
+                                for k in range(5):
+                                    tempTree[line[3][unitName[k]]]['workday'] = addArrays(
+                                        tempTree[line[3][unitName[k]]]['workday'], line[1])
+                                    tempTree[line[3][unitName[k]]]['weekend'] = addArrays(
+                                        tempTree[line[3][unitName[k]]]['weekend'], line[2])
+                                    if k + 1 != 5:
+                                        tempTree = tempTree[line[3][unitName[k]]]
+
                         else:
-                            tree[line[3]["NAZ_CZNUTS3"]]["workday"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["workday"],line[1])
-                            tree[line[3]["NAZ_CZNUTS3"]]["weekend"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["weekend"],line[2])
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"], line[1])
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"], line[2])
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["workday"] = addArrays(
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["workday"],line[1])
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["weekend"] = addArrays(
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["weekend"],line[2])
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["workday"] = addArrays(
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["workday"],line[1])
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["weekend"] = addArrays(
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]["weekend"],line[2])
-                            createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]],line[3]["NAZ_KU"], line, "ku", i)
-                            i += 1
-                            createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]], line[3]["NAZ_UTJ"], line, "tuj", i)
-                            i += 1
-                            createPath(
-                                tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]]
-                                [line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]], line[3]["NAZ_ZSJ"], line, "zsj", i
-                            )
-                            i += 1
+                            tempTree = tree[line[3][unitName[0]]][line[3][unitName[1]]][line[3][unitName[2]]][line[3][unitName[3]]]
+                            for j in range(4, len(unitName)):
+                                createPath(tempTree, line[3][unitName[j]], line, shortName[j], i)
+                                i += 1
+                                tempTree = tempTree[line[3][unitName[j]]]
+
+                            tempTree = tree
+                            for k in range(4):
+                                tempTree[line[3][unitName[k]]]['workday'] = addArrays(
+                                    tempTree[line[3][unitName[k]]]['workday'], line[1])
+                                tempTree[line[3][unitName[k]]]['weekend'] = addArrays(
+                                    tempTree[line[3][unitName[k]]]['weekend'], line[2])
+                                if k + 1 != 4:
+                                    tempTree = tempTree[line[3][unitName[k]]]
                     else:
-                        tree[line[3]["NAZ_CZNUTS3"]]["workday"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["workday"],line[1])
-                        tree[line[3]["NAZ_CZNUTS3"]]["weekend"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["weekend"],line[2])
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"], line[1])
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"], line[2])
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["workday"] = addArrays(
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["workday"], line[1])
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["weekend"] = addArrays(
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]]["weekend"], line[2])
-                        createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]],
-                                   line[3]["NAZ_ZUJ"],
-                                   line, "zuj", i)
-                        i += 1
-                        createPath(
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]],
-                            line[3]["NAZ_KU"], line, "ku", i)
-                        i += 1
-                        createPath(
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][
-                                line[3]["NAZ_KU"]], line[3]["NAZ_UTJ"], line, "tuj", i)
-                        i += 1
-                        createPath(
-                            tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][
-                                line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]], line[3]["NAZ_ZSJ"], line, "zsj", i)
-                        i += 1
+                        tempTree = tree[line[3][unitName[0]]][line[3][unitName[1]]][line[3][unitName[2]]]
+                        for j in range(3, len(unitName)):
+                            createPath(tempTree, line[3][unitName[j]], line, shortName[j], i)
+                            i += 1
+                            tempTree = tempTree[line[3][unitName[j]]]
+                        tempTree = tree
+                        for k in range(3):
+                            tempTree[line[3][unitName[k]]]['workday'] = addArrays(tempTree[line[3][unitName[k]]]['workday'], line[1])
+                            tempTree[line[3][unitName[k]]]['weekend'] = addArrays(tempTree[line[3][unitName[k]]]['weekend'], line[2])
+                            if k + 1 != 3:
+                                tempTree = tempTree[line[3][unitName[k]]]
                 else:
-                    tree[line[3]["NAZ_CZNUTS3"]]["workday"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["workday"],line[1])
-                    tree[line[3]["NAZ_CZNUTS3"]]["weekend"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["weekend"],line[2])
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["workday"],line[1])
-                    tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]]["weekend"],line[2])
-                    createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]], line[3]["NAZ_OBEC"], line, "obec", i)
-                    i += 1
-                    createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]],
-                               line[3]["NAZ_ZUJ"],
-                               line, "zuj", i)
-                    i += 1
-                    createPath(
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]],
-                        line[3]["NAZ_KU"], line, "ku", i)
-                    i += 1
-                    createPath(
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][
-                            line[3]["NAZ_KU"]], line[3]["NAZ_UTJ"], line, "tuj", i)
-                    i += 1
-                    createPath(
-                        tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][
-                            line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]], line[3]["NAZ_ZSJ"], line, "zsj", i)
-                    i += 1
+                    tempTree = tree[line[3][unitName[0]]][line[3][unitName[1]]]
+                    for j in range(2, len(unitName)):
+                        createPath(tempTree, line[3][unitName[j]], line, shortName[j], i)
+                        i += 1
+                        tempTree = tempTree[line[3][unitName[j]]]
+
+                    tempTree = tree
+                    for k in range(2):
+                        tempTree[line[3][unitName[k]]]['workday'] = addArrays(tempTree[line[3][unitName[k]]]['workday'], line[1])
+                        tempTree[line[3][unitName[k]]]['weekend'] = addArrays(tempTree[line[3][unitName[k]]]['weekend'], line[2])
+                        if k + 1 != 2:
+                            tempTree = tempTree[line[3][unitName[k]]]
             else:
-                tree[line[3]["NAZ_CZNUTS3"]]["workday"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["workday"], line[1])
-                tree[line[3]["NAZ_CZNUTS3"]]["weekend"] = addArrays(tree[line[3]["NAZ_CZNUTS3"]]["weekend"], line[2])
-                createPath(tree[line[3]["NAZ_CZNUTS3"]], line[3]["NAZ_LAU1"], line, "lau1", i)
-                i += 1
-                createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]], line[3]["NAZ_OBEC"], line, "obec", i)
-                i += 1
-                createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]], line[3]["NAZ_ZUJ"],
-                           line, "zuj", i)
-                i += 1
-                createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]],
-                           line[3]["NAZ_KU"], line, "ku", i)
-                i += 1
-                createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][
-                               line[3]["NAZ_KU"]], line[3]["NAZ_UTJ"], line, "tuj", i)
-                i += 1
-                createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][
-                               line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]], line[3]["NAZ_ZSJ"], line, "zsj", i)
-                i += 1
+                tempTree = tree[line[3][unitName[0]]]
+                for j in range(1, len(unitName)):
+                    createPath(tempTree, line[3][unitName[j]], line, shortName[j], i)
+                    i += 1
+                    tempTree = tempTree[line[3][unitName[j]]]
+                tempTree = tree
+                for k in range(1):
+                    tempTree[line[3][unitName[k]]]['workday'] = addArrays(tempTree[line[3][unitName[k]]]['workday'], line[1])
+                    tempTree[line[3][unitName[k]]]['weekend'] = addArrays(tempTree[line[3][unitName[k]]]['weekend'], line[2])
+                    if k+1 != 1:
+                        tempTree = tempTree[line[3][unitName[k]]]
         else:
-            createPath(tree, line[3]["NAZ_CZNUTS3"], line, "kraj", i)
+            tempTree = tree
+            for j in range(len(unitName)):
+                createPath(tempTree, line[3][unitName[j]],  line, shortName[j], i)
+                i += 1
+                tempTree = tempTree[line[3][unitName[j]]]
+    return tree
+"""
+
+def create_dict_refactor(data, tree):
+    i = 0;
+    unitName = ["NAZ_CZNUTS3", "NAZ_LAU1", "NAZ_OBEC", "NAZ_ZUJ", "NAZ_KU", "NAZ_UTJ", "NAZ_ZSJ"]
+    shortName = ["kraj", "lau1", "obec", "zuj", "ku", "tuj", "zsj"]
+    for line in data:
+        helper = 0
+        temp_tree = tree
+        key = line[3][unitName[helper]]
+        while key in temp_tree:
+            helper += 1
+            temp_tree = temp_tree[key]
+            key = line[3][unitName[helper]]
+        for j in range(helper, len(unitName)):
+            createPath(temp_tree, line[3][unitName[j]], line, shortName[j], i)
             i += 1
-            createPath(tree[line[3]["NAZ_CZNUTS3"]], line[3]["NAZ_LAU1"], line, "lau1", i)
-            i += 1
-            createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]], line[3]["NAZ_OBEC"], line, "obec",  i)
-            i += 1
-            createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]], line[3]["NAZ_ZUJ"], line, "zuj", i)
-            i += 1
-            createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]], line[3]["NAZ_KU"], line, "ku", i)
-            i += 1
-            createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]], line[3]["NAZ_UTJ"], line, "tuj", i)
-            i += 1
-            createPath(tree[line[3]["NAZ_CZNUTS3"]][line[3]["NAZ_LAU1"]][line[3]["NAZ_OBEC"]][line[3]["NAZ_ZUJ"]][line[3]["NAZ_KU"]][line[3]["NAZ_UTJ"]], line[3]["NAZ_ZSJ"], line, "zsj", i)
-            i += 1
+            temp_tree = temp_tree[line[3][unitName[j]]]
+        tempTree = tree
+        for k in range(helper):
+            tempTree[line[3][unitName[k]]]['workday'] = addArrays(tempTree[line[3][unitName[k]]]['workday'], line[1])
+            tempTree[line[3][unitName[k]]]['weekend'] = addArrays(tempTree[line[3][unitName[k]]]['weekend'], line[2])
+            if k + 1 != helper:
+                tempTree = tempTree[line[3][unitName[k]]]
     return tree
 
+def add_array_full(tree, array):
+    pass
 
 #Helper function, creates a path in the default dictionary
 def createPath(tree, path, line, type, id):
@@ -262,7 +203,7 @@ def createPath(tree, path, line, type, id):
     tree[path]["name"] = path
     tree[path]["id"] = id
     tree[path]["type"] = type
-    tree[path]["workday"] = addArrays([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], line[1])
+    tree[path]["workday"] = addArrays([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], line[1])
     tree[path]["weekend"] = addArrays([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], line[2])
     tree[path]["children"] = []
 
@@ -277,7 +218,7 @@ def addArrays(array1, array2):
 def changeFormat(tree):
     children = []
     if len(tree) == 0:
-        return
+        return children
     for key, value in tree.items():
         if(type(tree[key]) is dict):
             newEle = {
@@ -293,29 +234,36 @@ def changeFormat(tree):
 
 
 #Removes the inbetween nodes when node has only one descendant
+#goes through the tree recursicely
 def removeSingleNodes(tree):
     for place in tree:
-        if len(place["children"])==0:
+        #if it's the last node, return - only possible for the ZSJ units, every other node will have at least one
+        if len(place["children"]) == 0:
             return tree
         removeSingleNodes(place["children"])
+        #if it has only one child, replace it with children of the child
         if len(place["children"])==1:
             place["children"] = place["children"][0]["children"]
     return tree
-"""
-bmo = "bmo_db.csv"
-result = "Zones.json"
-zuj = "ZUJ.csv"
-data = groupByCode(dataLoad(bmo))
-zujDict = getZujData(zuj)
-data = mergeDataSets(data, zujDict)
-data = createDict2(data, tree())
-data = (changeFormat(data))
-data = removeSingleNodes(data)
-final = {}
-final["data"] = data
-with open(result,"w", encoding="utf8") as jsonFile:
-    json.dump(final, jsonFile, ensure_ascii=False)
-"""
+
+#Sort the children in the tree
+def sortEndTree(tree):
+    for place in tree:
+        if len(place["children"])==0:
+            return tree
+        sortEndTree(place['children'])
+        for i in range(len(place['children'])):
+            index = i
+            for j in range(i, len(place['children'])):
+                if place['children'][j]['name'] < place['children'][index]['name']:
+                    index = j
+            if index != i:
+                placeholder = place['children'][i]
+                place['children'][i] = place['children'][index]
+                place['children'][index] = placeholder
+        return tree
+    return tree
+
 
 
 def createJSON():
@@ -324,7 +272,7 @@ def createJSON():
         outputfile = "Zones.json"
     elif len(sys.argv) == 3:
         inputfile = sys.argv[1]
-        outpufile = sys.argv[2]
+        outputfile = sys.argv[2]
     elif len(sys.argv)>3:
         logging.error("Too many arguments \n1:Input file \n 2:Output file")
         sys.exit(1)
@@ -341,9 +289,10 @@ def createJSON():
     processsing = groupByCode(dataLoad(inputfile))
     zujDict = getZujData(zuj)
     processsing = mergeDataSets(processsing, zujDict)
-    processsing = createDict2(processsing, tree())
+    processsing = create_dict_refactor(processsing, tree())
     processsing = (changeFormat(processsing))
     processsing = removeSingleNodes(processsing)
+    processsing = sortEndTree(processsing)
     final = {}
     final["data"] = processsing
     with open(outputfile, "w", encoding="utf8") as jsonFile:
