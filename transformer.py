@@ -25,6 +25,8 @@ def groupByCode(data):
         code = data[i][0]
         workday = []
         weekend = []
+        #Goes through the data and creates a single array with user numbers, counts on the data used being correct
+        #18 & 18 records per workday, weekend
         while i < len(data) and data[i][2] == 'workday':
             workday.append(int(data[i][3]))
             i += 1
@@ -38,6 +40,7 @@ def groupByCode(data):
     return newData
 
 #Opens CSV ZUJ data
+#There was an issue with encoding, solved by opening with windows 1250 and writing using utf-8
 def getZujData(zuj):
     data = {}
     with open(zuj, "r", encoding="windows-1250") as zj:
@@ -170,23 +173,32 @@ def createDict2(data, tree):
     return tree
 """
 
+
+#This was used to create the dictionary, code was refactored
 def create_dict_refactor(data, tree):
     i = 0;
     unitName = ["NAZ_CZNUTS3", "NAZ_LAU1", "NAZ_OBEC", "NAZ_ZUJ", "NAZ_KU", "NAZ_UTJ", "NAZ_ZSJ"]
     shortName = ["kraj", "lau1", "obec", "zuj", "ku", "tuj", "zsj"]
     for line in data:
+        #helper tells us with which unitName we start
         helper = 0
         temp_tree = tree
+        #We start with the first key
         key = line[3][unitName[helper]]
+        #We cycle through the tree until we find a key that is missing
+        #If the key is found, we delve deeper into the tree using the key and move onto the next key
         while key in temp_tree:
             helper += 1
             temp_tree = temp_tree[key]
             key = line[3][unitName[helper]]
+        #after we find the missing tree, we continue inside the tree where we left off and create a path
+        #all the way to ZSJ
         for j in range(helper, len(unitName)):
             createPath(temp_tree, line[3][unitName[j]], line, shortName[j], i)
             i += 1
             temp_tree = temp_tree[line[3][unitName[j]]]
         tempTree = tree
+        #Then we go back and add user numbers all the way to where the last key was found originally
         for k in range(helper):
             tempTree[line[3][unitName[k]]]['workday'] = addArrays(tempTree[line[3][unitName[k]]]['workday'], line[1])
             tempTree[line[3][unitName[k]]]['weekend'] = addArrays(tempTree[line[3][unitName[k]]]['weekend'], line[2])
@@ -194,11 +206,9 @@ def create_dict_refactor(data, tree):
                 tempTree = tempTree[line[3][unitName[k]]]
     return tree
 
-def add_array_full(tree, array):
-    pass
-
 #Helper function, creates a path in the default dictionary
 def createPath(tree, path, line, type, id):
+    #a new dictionary has to be created inside before we can enter keys
     tree[path] = {}
     tree[path]["name"] = path
     tree[path]["id"] = id
@@ -221,6 +231,7 @@ def changeFormat(tree):
         return children
     for key, value in tree.items():
         if(type(tree[key]) is dict):
+            #goes through the tree recursively, changes the format to fit our schema
             newEle = {
                 "name": tree[key]["name"],
                 "id": tree[key]["id"],
@@ -247,6 +258,7 @@ def removeSingleNodes(tree):
     return tree
 
 #Sort the children in the tree
+#simple insert sort to at least partially sort the tree
 def sortEndTree(tree):
     for place in tree:
         if len(place["children"])==0:
@@ -265,7 +277,7 @@ def sortEndTree(tree):
     return tree
 
 
-
+#simple main method that acceps at least some command line arguments, in case different data need to be sorted
 def createJSON():
     if len(sys.argv) == 2:
         inputfile = sys.argv[1]
@@ -292,7 +304,7 @@ def createJSON():
     processsing = create_dict_refactor(processsing, tree())
     processsing = (changeFormat(processsing))
     processsing = removeSingleNodes(processsing)
-    processsing = sortEndTree(processsing)
+    #processsing = sortEndTree(processsing)
     final = {}
     final["data"] = processsing
     with open(outputfile, "w", encoding="utf8") as jsonFile:
